@@ -1,19 +1,22 @@
+/*----- Load Icons -----*/
+@import url('https://css.gg/chevron-right.css');
+
 a {
 	font-family: 'Montserrat', sans-serif;
-	color: white;
+	color: white !important;
 }
 
 body {
 	margin: 0;
-	background: url("./assets/background/wavy_background.png") no-repeat fixed;
+	background: url("./assets/background/wavy_background.png") no-repeat;
 	background-size: cover;
 }
 
-#navbar {
+nav {
 	height: 11%;
 }
 
-#navbar > div {
+nav > div {
 	height: 100%;
 }
 
@@ -31,8 +34,8 @@ body {
 }
 
 #navigation {
-	width: 35%;
-	float: right;
+	height: 100%;
+	width: 50%;
 	display: flex;
 	align-items: center;
 }
@@ -52,22 +55,126 @@ body {
 	font-size: 1.1em;
 	text-align: center;
 	margin: auto;
+	padding-top: 5%;
+}
+
+#intro-text-head {
+	font-size: 1.8em;
+}
+
+#intro-text-mission {
+	font-size: 1.5em;
 }
 
 #intro-showcase {
-	height: 60%;
+	height: 50%;
 	width: 80%;
 	margin: auto;
-	display: flex;
 	align-items: center;
 }
 
-#intro-showcase > div:nth-child(2) {
-	margin-left: 5%;
+.showcase {
+	height: 65%;
+	background-size: cover;
 }
 
-.showcase {
-	flex: 1;
-	height: 50%;
+.show > #navigation, .collapsing > #navigation {
+	background: url("./assets/background/wavy_background.png") no-repeat fixed;
 	background-size: cover;
+	padding-bottom: 23%;
+	border-width: 1px;
+	border-color: #b91ac4;
+	border-style: solid;
+	border-top-style: none;
+	border-radius: 0px 0px 8px 8px;
+}
+
+.btn {
+	border-radius: 0px;
+	width: 25%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-top: 4%;
+}
+
+.btn:hover {
+	background: none;
+}
+
+.btn:focus, .btn:active {
+	box-shadow: none;
+}
+
+.gg-chevron-right {
+	display: inline-block;
+	vertical-align: middle;
+	/* Animation cycle transitions */
+	-webkit-transition: all 0.1s ease-out;
+  	-moz-transition: all 0.1s ease-out;
+  	-o-transition: all 0.1s ease-out;
+  	transition: all 0.1s ease-out;
+}
+
+#main-content {
+	padding-top: 10%;
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+#tech-head {
+	font-size: 1.8em;
+}
+
+/* Responsive behaviour */
+
+@media only screen and (max-width: 768px) {
+
+	#introduction {
+		width: 95%;
+		margin-top: 10%;
+	}
+
+	#intro-text {
+		margin-top: 35%;
+		font-size: 0.8em;
+		padding-top: 0;
+	}
+
+	#intro-showcase {
+		width: 90%;
+	}
+
+	#intro-showcase > div:nth-child(2) {
+		margin-top: 5%;
+	}
+
+	.btn {
+		width: 80%;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		margin-top: 8%;
+	}
+
+	#main-content {
+		padding-top: 30%;
+	}
+
+	#tech-head {
+		font-size: 1.2em;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	#intro-showcase {
+		display: flex;
+	}
+
+	#intro-showcase > div:nth-child(2) {
+		margin-left: 5%;
+	}
+
+	.showcase {
+		flex: 1;
+	}
 }
