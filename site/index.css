@@ -7,7 +7,7 @@ a {
 
 body {
 	margin: 0;
-	background: url("./assets/background/wavy_background2.png") no-repeat;
+	background: url("./assets/background/wavy_background3.png") no-repeat;
 	background-size: 100%;
 }
 
@@ -75,17 +75,16 @@ nav > div {
 }
 
 #introduction {
-	width: 70%;
 	height: 80%;
-	margin: auto;
 }
 
 #intro-text {
-	width: 80%;
+	width: 45%;
 	font-size: 1.1em;
-	text-align: center;
-	margin: auto;
-	padding-top: 5%;
+	text-align: left;
+	float: right;
+	padding-top: 15%;
+	padding-left: 2%;
 }
 
 #intro-text-head {
@@ -94,18 +93,6 @@ nav > div {
 
 #intro-text-mission {
 	font-size: 1.5em;
-}
-
-#intro-showcase {
-	height: 50%;
-	width: 80%;
-	margin: auto;
-	align-items: center;
-}
-
-.showcase {
-	height: 65%;
-	background-size: cover;
 }
 
 .show > #navigation, .collapsing > #navigation {
@@ -121,7 +108,7 @@ nav > div {
 
 .btn {
 	border-radius: 0px;
-	width: 25%;
+	min-width: 30%;
 	padding-top: 1%;
 	padding-bottom: 1%;
 	margin-top: 4%;
@@ -148,13 +135,16 @@ nav > div {
 
 #main-content {
 	padding-top: 20%;
+	padding-bottom: 20%;
 	width: 90%;
 	margin: auto;
 	text-align: center;
 }
 
 #tech-head {
-	font-size: 1.8em;
+	font-size: 1.9em;
+	font-weight: 800;
+	margin: 10% auto 15% auto;
 }
 
 #tech-body {
@@ -162,44 +152,163 @@ nav > div {
 	margin: auto;
 }
 
-.tech-row {
+.card-row {
 	height: 30%;
 	margin-top: 5%;
 	display: flex;
 }
 
-.tech-row > div:nth-child(n+2) {
+.card-row > div:nth-child(n+2) {
 	margin-left: 5%;
 }
 
-.tech-item {
+.card-flex {
 	flex: 1;
-	border: 1px solid #dbdbdb;
+}
+
+.card-shell {
 	border-radius: 7px;
 	padding: 1% 1% 1% 1%;
 	background-color: #e8e8e8;
+	/* Animation cycle transitions */
+	-webkit-transition: all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
 }
 
-.tech-content {
+.card-content {
 	text-align: center;
 }
 
-.tech-content-image {
+.card-content-image {
 	height: 60%;
 	display: flex;
 	align-items: center;
 }
 
-.tech-content-image > img {
+.card-content-image > img {
 	margin: auto;
 	vertical-align: middle;
 	max-height: 100%;
 	width: 60%
 }
 
-.tech-content-desc {
+.card-content-desc {
 	margin-top: 10%;
-	color: black !important;
+	color: black;
+}
+
+.card-content-desc hr {
+	width: 85%;
+}
+
+.small-lh {
+	line-height: 0.2em;
+}
+
+#showcase {
+	width: 90%;
+	margin: auto;
+	margin-top: 20%;
+}
+
+#show-writeup {
+	margin-bottom: 20%;
+	font-size: 1.2em;
+}
+
+#events {
+	margin-top: 5%;
+}
+
+#events > a {
+	font-size: 1.8em;
+}
+
+#tourney {
+	height: 40%;
+	width: 80%;
+	margin: auto;
+}
+
+#tourney > div {
+	height: 100%;
+}
+
+#projects {
+	margin-top: 10%;
+}
+
+#projects > a {
+	font-size: 1.8em;
+}
+
+#proj-content {
+	width: 90%;
+	margin: auto;
+}
+
+#proj-content .card-content-image {
+	height: 75%;
+}
+
+.card-img-large > img {
+	width: 75%;
+}
+
+.card-highlight {
+	background-color: #f0e005;
+	border: none;
+}
+
+.card-highlight > div > div {
+	color: white;
+	font-weight: 800;
+}
+
+.rounded-img > img {
+	border-radius: 50%;
+	width: 60%;
+}
+
+#projects .card-shell {
+	display: grid;
+	cursor: pointer;
+}
+
+#projects .card-shell > * {
+	grid-column: 1 / 1;
+  	grid-row: 1 / 1;
+  	/* Animation cycle transitions */
+	-webkit-transition: all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
+}
+
+.card-blur > * {
+	filter: blur(5px);
+}
+
+.card-blur .card-overlay {
+	filter: blur(0);
+}
+
+#projects .card-content {
+	z-index: 2;
+}
+
+.card-overlay {
+	justify-content: center;
+	align-items: center;
+	display: none;
+	z-index: 1;
+}
+
+.card-overlay button {
+	margin-top: 10%;
+	width: 80%;
 }
 
 /* Responsive behaviour */
@@ -236,23 +345,33 @@ nav > div {
 	}
 
 	#main-content {
-		padding-top: 30%;
+		padding-top: 40%;
 	}
 
 	#tech-head {
 		font-size: 1.2em;
 	}
 
-	.tech-row {
+	#tech-body {
+		padding-top: 7%;
+	}
+
+	#tech-body > div:not(:first-child) {
+		margin-top: 30% !important;
+	}
+
+	.card-row {
 		display: inline-block;
-		height: 150%;
+		height: 120%;
+		width: 50%;
 	}
 
-	.tech-row > div:nth-child(n+2) {
+	.card-row .card-shell:nth-child(n+2) {
 		margin-left: 0;
+		margin-top: 10%;
 	}
 
-	.tech-item {
+	.card-item {
 		flex: 0;
 		height: 20%;
 	}
