@@ -7,7 +7,13 @@ a {
 
 body {
 	margin: 0;
-	background: url("./assets/background/wavy_background3.png") no-repeat;
+}
+
+#intro-background {
+	position: absolute;
+	height: 120vh;
+	width: 100%;
+	background: url("./assets/background/intro-div.png") no-repeat;
 	background-size: 100%;
 }
 
@@ -74,17 +80,23 @@ nav > div {
 	flex: 1;
 }
 
+#wrapper {
+	position: relative;
+	overflow-x: hidden;
+}
+
 #introduction {
-	height: 80%;
+	height: 100vh;
+	padding-bottom: 40vh;
 }
 
 #intro-text {
-	width: 45%;
+	width: 41%;
 	font-size: 1.1em;
 	text-align: left;
 	float: right;
 	padding-top: 15%;
-	padding-left: 2%;
+	padding-right: 2%;
 }
 
 #intro-text-head {
@@ -134,36 +146,41 @@ nav > div {
 }
 
 #main-content {
-	padding-top: 20%;
-	padding-bottom: 20%;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 	text-align: center;
 }
 
+#main-content > div {
+	background: url("./assets/background/div_background.png");
+	background-size: cover;
+}
+
 #tech-head {
+	padding-top: 15vh;
 	font-size: 1.9em;
+	width: 95%;
 	font-weight: 800;
-	margin: 10% auto 15% auto;
+	margin: 0 auto 15% auto;
 }
 
 #tech-body {
-	width: 90%;
-	margin: auto;
+	margin: auto 10% auto 10%;
 }
 
 .card-row {
-	height: 30%;
+	height: 25%;
+	width: 100%;
 	margin-top: 5%;
 	display: flex;
 }
 
-.card-row > div:nth-child(n+2) {
-	margin-left: 5%;
+.card-row > div {
+	flex: 1;
 }
 
-.card-flex {
-	flex: 1;
+.card-row > div:nth-child(n+2) {
+	margin-left: 5%;
 }
 
 .card-shell {
@@ -179,10 +196,17 @@ nav > div {
 
 .card-content {
 	text-align: center;
+	margin: auto;
+	width: 100%;
+}
+
+#projects .card-content {
+	margin: 0;
 }
 
 .card-content-image {
 	height: 60%;
+	align-items: center;
 	display: flex;
 	align-items: center;
 }
@@ -191,10 +215,11 @@ nav > div {
 	margin: auto;
 	vertical-align: middle;
 	max-height: 100%;
-	width: 60%
+	max-width: 60%
 }
 
 .card-content-desc {
+	font-size: 1.2vw;
 	margin-top: 10%;
 	color: black;
 }
@@ -207,19 +232,62 @@ nav > div {
 	line-height: 0.2em;
 }
 
-#showcase {
-	width: 90%;
+#tech-footer {
+	width: 65%;
+	height: 12%;
+	margin: 10% auto 0 auto;
+	border-radius: 8px 8px 0 0;
+	background-color: white;
+}
+
+#timeline {
+	width: 100%;
+}
+
+#timeline-container {
+	color: black;
+	background: url("./assets/background/div_bg.png") no-repeat;
+	background-size: 100%;
+}
+
+#timeline-container > div {
+	background-color: white;
+}
+
+#timeline-head {
+	font-size: 1.9em;
+	font-weight: 800;
+	width: 65%;
 	margin: auto;
-	margin-top: 20%;
+}
+
+#timeline-summary {
+	width: 65%;
+	margin: auto;
+	padding: 3% 8% 5% 8%;
+	font-size: 1.25em;
+}
+
+#timeline-body > img {
+	width: 100%;
+}
+
+#showcase {
+	padding-top: 10%;
+	padding-bottom: 20%;
+}
+
+#showcase > div {
+	width: 81%;
+	margin: auto;
 }
 
 #show-writeup {
-	margin-bottom: 20%;
 	font-size: 1.2em;
 }
 
 #events {
-	margin-top: 5%;
+	margin-top: 5% !important;
 }
 
 #events > a {
@@ -227,7 +295,7 @@ nav > div {
 }
 
 #tourney {
-	height: 40%;
+	height: 40vh;
 	width: 80%;
 	margin: auto;
 }
@@ -237,7 +305,7 @@ nav > div {
 }
 
 #projects {
-	margin-top: 10%;
+	margin-top: 10% !important;
 }
 
 #projects > a {
@@ -245,7 +313,7 @@ nav > div {
 }
 
 #proj-content {
-	width: 90%;
+	width: 81%;
 	margin: auto;
 }
 
@@ -315,26 +383,30 @@ nav > div {
 
 @media only screen and (max-width: 768px) {
 	body {
-		background-size: cover;
+		background: url("./assets/background/mobile_background2.png") no-repeat;
+		background-size: 100%;
+	}
+
+	#intro-background {
+		background: url("./assets/background/intro-div-mobile.png") no-repeat;
 	}
 
 	#introduction {
-		width: 95%;
-		margin-top: 10%;
+		display: flex;
+		justify-content: center;
+		align-content: center;
 	}
 
 	#intro-text {
-		margin-top: 35%;
+		width: 80%;
+		margin: auto;
 		font-size: 0.8em;
+		text-align: center;
+		float: none;
+	}
+
+	#main-content {
 		padding-top: 0;
-	}
-
-	#intro-showcase {
-		width: 90%;
-	}
-
-	#intro-showcase > div:nth-child(2) {
-		margin-top: 5%;
 	}
 
 	.btn {
@@ -344,11 +416,8 @@ nav > div {
 		margin-top: 8%;
 	}
 
-	#main-content {
-		padding-top: 40%;
-	}
-
 	#tech-head {
+		padding-top: 15vh;
 		font-size: 1.2em;
 	}
 
@@ -357,23 +426,95 @@ nav > div {
 	}
 
 	#tech-body > div:not(:first-child) {
-		margin-top: 30% !important;
-	}
-
-	.card-row {
-		display: inline-block;
-		height: 120%;
-		width: 50%;
-	}
-
-	.card-row .card-shell:nth-child(n+2) {
-		margin-left: 0;
 		margin-top: 10%;
 	}
 
-	.card-item {
+	.card-row {
+		width: 90%;
+		margin-top: 0;
+		height: auto;
+		display: inline-block;
+	}
+
+	.card-row > div:nth-child(n+2) {
+		margin-left: 0;
+	}
+
+	#tech-body .card-row > div {
+		height: 30vw;
+		width: 30vw;
+		display: flex;
+    	align-items: center;
+	}
+
+	#showcase .card-row > div {
+		height: 60vw;
+		width: 60vw;
+		display: flex;
+    	align-items: center;
+    	margin: auto;
+	}
+
+	#projects .card-row > div {
+		height: 30vw;
+		width: 30vw;
+	}
+
+	#tech-body .card-row > div:nth-child(5) {
+		display: none;
+	}
+
+	#tech-body .card-row > div:nth-child(n+3) {
+		margin-top: 10%;
+	}
+
+	#tech-body .card-row > div:nth-child(odd) {
+		float: left;
+	}
+
+	#tech-body .card-row > div:nth-child(even) {
+		float: right;
+	}
+
+	.card-shell {
 		flex: 0;
-		height: 20%;
+	}
+
+	.card-content-image {
+		min-height: 30%;
+		height: auto;
+	}
+
+	.card-content-desc {
+		font-size: 2.2vw;
+	}
+
+	#timeline-container {
+		background: none;
+	}
+
+	#tech-footer, #timeline-head, #timeline-summary {
+		width: 100%;
+	}
+
+	#tourney {
+		height: 140vh;
+	}
+
+	#showcase .card-row > div:nth-child(n+1) {
+		margin-top: 10%;
+	}
+
+	#proj-content {
+		width: 90%;
+	}
+
+	#projects .card-row > div:nth-child(odd) {
+		float: left;
+	}
+
+	#projects .card-row > div:nth-child(even) {
+		float: right;
 	}
 }
 

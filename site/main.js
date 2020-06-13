@@ -34,31 +34,41 @@ $(document).ready(() => {
 
 	//Card shell hover animation
 	$(".card-shell").on("mouseenter", function() {
-		//Dim background color
-		console.log($(this).css("background-color"));
-		if ($(this).hasClass("card-highlight")) {
-			$(this).css("background-color", "#4d4702");
-		} else {
-			$(this).css("background-color", "#595959");
+		//Checks if the card is in proj-content
+		if ($(this).closest("#proj-content").length > 0) {	
+			//Dim background color
+			if ($(this).hasClass("card-highlight")) {
+				$(this).css("background-color", "#4d4702");
+			} else {
+				$(this).css("background-color", "#595959");
+			}
+			//Blur the card
+			$(this).addClass("card-blur");
+			//Checks that the user is not on mobile
+			if ($(window).width() > 1024) {
+				//Show the overlay text
+				$(this).find(".card-overlay").css("display", "flex");
+			}
 		}
-		//Blur the card
-		$(this).addClass("card-blur");
-		//Show the overlay text
-		$(this).find(".card-overlay").css("display", "flex");
 	});
 
 	//Card shell unhover animation
 	$(".card-shell").on("mouseleave", function() {
-		//Brighten background color
-		console.log($(this).css("background-color"));
-		if ($(this).hasClass("card-highlight")) {
-			$(this).css("background-color", "#f0e005");
-		} else {
-			$(this).css("background-color", "#e8e8e8");
+		//Checks if the card is in proj-content
+		if ($(this).closest("#proj-content").length > 0) {			
+			//Brighten background color
+			if ($(this).hasClass("card-highlight")) {
+				$(this).css("background-color", "#f0e005");
+			} else {
+				$(this).css("background-color", "#e8e8e8");
+			}
+			//Unblur the card
+			$(this).removeClass("card-blur");
+			//Checks that the user is not on mobile
+			if ($(window).width() > 1024) {
+				//Hide the overlay text
+				$(this).find(".card-overlay").css("display", "none");
+			}
 		}
-		//Unblur the card
-		$(this).removeClass("card-blur");
-		//Hide the overlay text
-		$(this).find(".card-overlay").css("display", "none");
 	});
 });
