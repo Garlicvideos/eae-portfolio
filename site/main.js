@@ -4,7 +4,7 @@ $(document).ready(() => {
 	$(window).scroll((event) => {
 	    var scroll = $(window).scrollTop();
 	    //Navbar background 1
-	    if (scroll > 100) {
+	    if (scroll > 100 && scroll < 720) {
 	    	$("#nav-bg").addClass("show-bg");
 	    }
 
