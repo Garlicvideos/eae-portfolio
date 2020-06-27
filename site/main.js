@@ -1,5 +1,13 @@
-$(document).ready(() => {
+//Anchor tag scroll smooth animation
+$(document).on('click', 'a[href^="#"]', function (event) {
+	console.log("clic!!!!");
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+});
 
+
+$(document).ready(() => {
 	//Navbar scroll background updates
 	$(window).scroll((event) => {
 	    var scroll = $(window).scrollTop();
@@ -24,16 +32,16 @@ $(document).ready(() => {
 	});
 
 	//Chevron animations
-	$(".chev-anim").on("mouseenter", function() {
+	$(".chev-anim").on("mouseenter", function () {
 		$(this).find(".gg-chevron-right").css("left", "4%");
 	});
 
-	$(".chev-anim").on("mouseleave", function() {
+	$(".chev-anim").on("mouseleave", function () {
 		$(this).find(".gg-chevron-right").css("left", "0");
 	});
 
 	//Card shell hover animation
-	$(".card-shell").on("mouseenter", function() {
+	$(".card-shell").on("mouseenter", function () {
 		//Checks if the card is in proj-content
 		if ($(this).closest("#proj-content").length > 0) {	
 			//Dim background color
@@ -53,7 +61,7 @@ $(document).ready(() => {
 	});
 
 	//Card shell unhover animation
-	$(".card-shell").on("mouseleave", function() {
+	$(".card-shell").on("mouseleave", function () {
 		//Checks if the card is in proj-content
 		if ($(this).closest("#proj-content").length > 0) {			
 			//Brighten background color
@@ -70,5 +78,14 @@ $(document).ready(() => {
 				$(this).find(".card-overlay").css("display", "none");
 			}
 		}
+	});
+
+	//Enlarge certificate when clicked on
+	$(".cert-shell").on("click", function ()  {
+		//Get the source of the image in the div that the user clicked on
+		let source = $(this).find("img").attr("src");
+		//Change the image source in the modal to the one the user clicked on
+		$(".modal-body").find("img").attr("src", source);
+		$("#certificate-modal").modal();
 	});
 });
