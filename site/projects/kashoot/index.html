@@ -1,0 +1,244 @@
+<html>
+	<head>
+		<title>Project - Kashoot!</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Overview on my project, Kashoot!">
+		<meta name="keywords" content="Xavier, Teo, Xavier Teo, Portfolio, Student, Bedok View Secondary School, Secondary 4">
+		<meta name="author" content="Xavier Teo">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="index.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="./main.js"></script>
+		<link href='https://css.gg/arrow-right.css' rel='stylesheet'>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark sticky-top text-white">
+			<div id="nav-bg" class="nav-bg"></div>
+			<div id="heading">
+				<div>
+					<a href="#introduction" class="navbar-brand"><b>Xavier's Portfolio</b></a>
+				</div>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navNav" aria-controls="navNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navNav">
+				<div class="navbar-nav ml-auto" id="navigation">
+					<div class="nav-item active nav-button">
+						<a href="#introduction">Introduction</a>
+					</div>
+					<div class="nav-item nav-button">
+						<a href="#nav-background-anchor">Background</a>
+					</div>
+					<div class="nav-item nav-button">
+						<a href="#showcase">Showcase</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div id="showcase-container">
+			<div id="showcase-carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+			    	<li data-target="#showcase-carousel" data-slide-to="0" class="active"></li>
+			    	<li data-target="#showcase-carousel" data-slide-to="1"></li>
+			    	<li data-target="#showcase-carousel" data-slide-to="2"></li>
+			    	<li data-target="#showcase-carousel" data-slide-to="3"></li>
+			    	<li data-target="#showcase-carousel" data-slide-to="4"></li>
+			  	</ol>
+			  	<div class="carousel-inner">
+			    	<div class="carousel-item active">
+			      		<img class="d-block w-100" src="./assets/carousel/kashoot.png" alt="Kashoot logo">
+			    	</div>
+			    	<div class="carousel-item">
+			      		<img class="d-block w-100" src="./assets/carousel/lobby_selection.png" alt="Lobby Selection">
+			    	</div>
+			    	<div class="carousel-item">
+			      		<img class="d-block w-100" src="./assets/carousel/name_choose.png" alt="Name choosing">
+			    	</div>
+			    	<div class="carousel-item">
+			      		<img class="d-block w-100" src="./assets/carousel/lobby_joined.png" alt="Lobby joined">
+			    	</div>
+			    	<div class="carousel-item">
+			      		<img class="d-block w-100" src="./assets/carousel/server_console.png" alt="Server console">
+			    	</div>
+			  	</div>
+			  	<a class="carousel-control-prev" href="#showcase-carousel" role="button" data-slide="prev">
+			    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    	<span class="sr-only">Previous</span>
+			  	</a>
+			  	<a class="carousel-control-next" href="#showcase-carousel" role="button" data-slide="next">
+			    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    	<span class="sr-only">Next</span>
+			  	</a>
+			</div>
+			<div id="showcase-about">
+				<a>Kashoot! is a complete rewrite of Kahoot! without the downsides. Kashoot! retains all of Kahoot!'s current features, as well as prevent bots from joining game lobbies, as well as remove the maximum player cap. <b>It is currently a work-in-progress.</b></a>
+			</div>
+			<div id="github">
+				<div id="view-work-btn" class="btn btn-outline-light">
+					<a href="https://github.com/Garlicvideos/reddits-nightmare">View this project on github <img class="github-btn-img" width="8%" src="./assets/icons/github.png"></a>
+				</div>
+			</div>
+			<div id="showcase-desc">
+				<div id="technologies">
+					<div id="tech-head">
+						<a>Technologies used</a>
+					</div>
+					<div id="tech-list">
+						<div>
+							<div class="tech-item">
+								<div class="tech-item-img">
+									<div>
+										<img src="./assets/icons/nodejs.jpg" alt="nodejs">
+									</div>
+								</div>
+								<div class="tech-item-content">
+									<div>
+										<div class="tech-item-head">
+											<a>Node.JS</a>
+										</div>
+										<div class="tech-item-desc">
+											<a>Node.JS was used to handle the backend. It processes many events, such as captcha verification, client connections, lobby events, and many more.</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tech-item">
+								<div class="tech-item-img">
+									<div>
+										<img src="./assets/icons/mongodb.jpg" alt="mongodb">
+									</div>
+								</div>
+								<div>
+									<div>
+										<div class="tech-item-head">
+											<a>MongoDB</a>
+										</div>
+										<div class="tech-item-desc">
+											<a>MongoDB was used to store information on game lobbies and player info. Such information includes the game pin, player ID, questions, answers, and a whole lot more.</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tech-item">
+								<div class="tech-item-img">
+									<div>
+										<img src="./assets/icons/expressjs.jpg" alt="nodejs">
+									</div>
+								</div>
+								<div>
+									<div>
+										<div class="tech-item-head">
+											<a>Express.JS</a>
+										</div>
+										<div class="tech-item-desc">
+											<a>Express.JS was used to assist in managing client connections to the webserver</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tech-item">
+								<div class="tech-item-img">
+									<div>
+										<img src="./assets/icons/socketio.svg" alt="nodejs">
+									</div>
+								</div>
+								<div>
+									<div>
+										<div class="tech-item-head">
+											<a>Socket.io</a>
+										</div>
+										<div class="tech-item-desc">
+											<a>Socket.io was used to manage socket connections to the server. Information such as lobby details, connection status and authentication, are sent through Socket.io</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="features">
+					<div id="tech-head">
+						<a>Highlights</a>
+					</div>
+					<div id="tech-list">
+						<div>
+							<div class="tech-item">
+								<div class="tech-item-img">
+									<div>
+										<img src="./assets/icons/no_bot.jpg" alt="no bots">
+									</div>
+								</div>
+								<div class="tech-item-content">
+									<div>
+										<div class="tech-item-head">
+											<a>Flood Prevention</a>
+										</div>
+										<div class="tech-item-desc">
+											<a>Using Google's Recaptcha v2 Invisible, bots will be filtered out. Game lobbies will no longer be flooded by fake players, overloading servers and crashing them.</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tech-item">
+								<div class="tech-item-img">
+									<div>
+										<img src="./assets/icons/player_limit.jpg" alt="happy people">
+									</div>
+								</div>
+								<div>
+									<div>
+										<div class="tech-item-head">
+											<a>No hard max player capacity</a>
+										</div>
+										<div class="tech-item-desc">
+											<a>The 1,000 player limit is removed. You can now host games as large as your computer can handle. School-wide kahoot events are now possible.</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tech-item">
+								<div class="tech-item-img">
+									<div>
+										<img src="./assets/icons/deploy.jpg" alt="deployment">
+									</div>
+								</div>
+								<div>
+									<div>
+										<div class="tech-item-head">
+											<a>Easy to deploy</a>
+										</div>
+										<div class="tech-item-desc">
+											<a>All you need to do is to start the server and it will do all the setting up for you. A game can be up and running within minutes!<br>(This feature is in the making)</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tech-item">
+								<div class="tech-item-img">
+									<div>
+										<img src="./assets/icons/open_source.png" alt="open source">
+									</div>
+								</div>
+								<div>
+									<div>
+										<div class="tech-item-head">
+											<a>Open Source</a>
+										</div>
+										<div class="tech-item-desc">
+											<a>Anyone can easily and readily deploy a copy on their system. Programmers can also take a look at the source code and help improve or learn from it.</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
