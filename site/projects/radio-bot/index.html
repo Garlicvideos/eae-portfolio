@@ -1,0 +1,225 @@
+<html>
+	<head>
+		<title>Project - Discord Radio Bot</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Overview on my project, Discord Radio Bot!">
+		<meta name="keywords" content="Xavier, Teo, Xavier Teo, Portfolio, Student, Bedok View Secondary School, Secondary 4">
+		<meta name="author" content="Xavier Teo">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="index.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="./main.js"></script>
+		<link href='https://css.gg/arrow-right.css' rel='stylesheet'>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark sticky-top text-white">
+			<div id="nav-bg" class="nav-bg"></div>
+			<div id="heading">
+				<div>
+					<a href="../../index.html" class="navbar-brand"><b>Xavier's Portfolio</b></a>
+				</div>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navNav" aria-controls="navNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navNav">
+				<div class="navbar-nav ml-auto" id="navigation">
+					<div class="nav-item active nav-button">
+						<a href="../../index.html#introduction">Introduction</a>
+					</div>
+					<div class="nav-item nav-button">
+						<a href="../../index.html#nav-background-anchor">Background</a>
+					</div>
+					<div class="nav-item nav-button">
+						<a href="../../index.html#showcase">Showcase</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div id="showcase-container">
+			<!-- Modal -->
+			<div class="modal fade" id="carousel-modal" tabindex="-1" role="dialog" aria-labelledby="carousel-label" aria-hidden="true">
+			  	<div class="modal-dialog" role="document">
+			    	<div class="modal-content">
+			      		<div class="modal-body">
+			      			<img src="./assets/carousel/logo.png">
+			      			<video controls class="d-block w-100 carousel-video hidden" alt="video example">
+			      				<source src="./assets/carousel/slide-2.mp4" type="video/mp4">
+			      			</video>
+			      		</div>
+			    	</div>
+			  	</div>
+			</div>
+			<div id="showcase-carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+			    	<li data-target="#showcase-carousel" data-slide-to="0" class="active"></li>
+			    	<li data-target="#showcase-carousel" data-slide-to="1"></li>
+			    	<li data-target="#showcase-carousel" data-slide-to="2"></li>
+			    	<li data-target="#showcase-carousel" data-slide-to="3"></li>
+			    	<li data-target="#showcase-carousel" data-slide-to="4"></li>
+			  	</ol>
+			  	<div class="carousel-inner">
+			    	<div class="carousel-item active">
+			      		<img class="d-block w-100" src="./assets/carousel/logo.png" alt="Discord Radio Bot">
+			    	</div>
+			    	<div class="carousel-item">
+			      		<img class="d-block w-100" src="./assets/carousel/slide-1.png" alt="example">
+			    	</div>
+			    	<div class="carousel-item">
+			      		<video autoplay plays-inline muted loop class="d-block w-100 carousel-video" alt="video example">
+			      			<source src="./assets/carousel/slide-2.mp4" type="video/mp4">
+			      		</video>
+			    	</div>
+			    	<div class="carousel-item">
+			      		<img class="d-block w-100" src="./assets/carousel/slide-3.png" alt="example 2">
+			    	</div>
+			    	<div class="carousel-item">
+			      		<img class="d-block w-100" src="./assets/carousel/slide-4.png" alt="console 1">
+			    	</div>
+			  	</div>
+			  	<a class="carousel-control-prev" href="#showcase-carousel" role="button" data-slide="prev">
+			    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    	<span class="sr-only">Previous</span>
+			  	</a>
+			  	<a class="carousel-control-next" href="#showcase-carousel" role="button" data-slide="next">
+			    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    	<span class="sr-only">Next</span>
+			  	</a>
+			</div>
+			<div id="showcase-about">
+				<a>Discord Radio Bot is a bot that relays radio feed from (currently only) Singapore's Radio Stations into Discord voice channels. It includes a bunch of features as well, such as song info, lyrics, and more! This is the first bot of it's kind.<br></a>
+			</div>
+			<div id="github">
+				<div id="view-work-btn" class="btn btn-outline-light">
+					<a href="https://github.com/Garlicvideos/sg-radio-bot">View this project on github <img class="github-btn-img" width="8%" src="./assets/icons/github.png"></a>
+				</div>
+			</div>
+			<div id="showcase-desc">
+				<div id="technologies">
+					<div id="tech-head">
+						<a>Technologies used</a>
+					</div>
+					<div id="tech-list">
+						<div>
+							<div class="tech-item">
+								<div class="tech-item-img">
+									<div>
+										<img src="./assets/icons/nodejs.jpg" alt="nodejs">
+									</div>
+								</div>
+								<div class="tech-item-content">
+									<div>
+										<div class="tech-item-head">
+											<a>Node.JS</a>
+										</div>
+										<div class="tech-item-desc">
+											<a>Node.JS is what the bot runs on. It controls everything, from the downloading of posts from reddit to the uploading of them on Instagram.</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tech-item">
+								<div class="tech-item-img" style="background-color: #2C2F33;">
+									<div>
+										<img src="./assets/icons/discordjs.png" alt="Discordjs">
+									</div>
+								</div>
+								<div>
+									<div>
+										<div class="tech-item-head">
+											<a>Discord.JS</a>
+										</div>
+										<div class="tech-item-desc">
+											<a>Discord.JS is used to perform actions within discord as a bot. It is used to login to Discord, join voice channels, send and read messages, and a whole lot more!</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tech-item">
+								<div class="tech-item-img">
+									<div>
+										<img src="./assets/icons/genius.png" alt="genius logo">
+									</div>
+								</div>
+								<div>
+									<div>
+										<div class="tech-item-head">
+											<a>Genius-lyrics-api</a>
+										</div>
+										<div class="tech-item-desc">
+											<a>Genius-lyrics-api is used to interact with Genius's API. It is used to retrieve information such as song lyrics and the song's album.</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="features">
+					<div id="tech-head">
+						<a>Highlights</a>
+					</div>
+					<div id="tech-list">
+						<div>
+							<div class="tech-item">
+								<div class="tech-item-img">
+									<div>
+										<img src="./assets/icons/radio.svg" alt="radio">
+									</div>
+								</div>
+								<div class="tech-item-content">
+									<div>
+										<div class="tech-item-head">
+											<a>Never get bored</a>
+										</div>
+										<div class="tech-item-desc">
+											<a>With support for 5 radio stations (and counting), you can listen to radio feed from multiple langauges and genres! You can add custom radio stations too.</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tech-item">
+								<div class="tech-item-img">
+									<div>
+										<img src="./assets/icons/info.svg" alt="info">
+									</div>
+								</div>
+								<div>
+									<div>
+										<div class="tech-item-head">
+											<a id="max_cap">Detailed song info</a>
+										</div>
+										<div class="tech-item-desc">
+											<a>The bot grabs information on the current song through SPH Radio's API. Information such as song name, artist, start time and end time are available.</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tech-item">
+								<div class="tech-item-img">
+									<div>
+										<img src="./assets/icons/genius.png" alt="genius logo">
+									</div>
+								</div>
+								<div>
+									<div>
+										<div class="tech-item-head">
+											<a>Genius Lyrics Support</a>
+										</div>
+										<div class="tech-item-desc">
+											<a>Lyrics and the album art for the currently playing song is available. It is retrieved from Genius's API. </a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

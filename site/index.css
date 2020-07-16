@@ -13,7 +13,7 @@ body {
 	position: absolute;
 	height: 120vh;
 	width: 100%;
-	background: url("./assets/background/intro-div2.png") no-repeat;
+	background-image: url("./assets/background/intro-div3.png"), linear-gradient(to bottom right, #0092ff, #0063ed);
 	background-size: 100%;
 }
 
@@ -178,8 +178,12 @@ button a {
 }
 
 #main-content > div {
-	background: url("./assets/background/div_background2.png");
-	background-size: cover;
+	background-image: linear-gradient(to bottom right, #0092ff, #0063ed);
+}
+
+#technologies {
+	background-image: url('./assets/background/div_background4.png'), linear-gradient(to bottom right, #0092ff, #0063ed) !important;
+	background-size: 100%;
 }
 
 #tech-head {
@@ -418,11 +422,8 @@ button a {
 	margin-top: 10% !important;
 }
 
-#cert-header {
+#cert-header, #teste-header {
 	padding-bottom: 4%;
-}
-
-#cert-header > a {
 	font-size: 1.8em;
 }
 
@@ -452,11 +453,12 @@ button a {
 	width: 100%;
 }
 
-.modal-dialog {
+#certificate-modal .modal-dialog {
+	max-height: 80%;
 	max-width: 50%;
 }
 
-.modal-body {
+#certificate-modal .modal-body {
 	padding: 0;
 }
 
@@ -468,6 +470,37 @@ button a {
 .modal-open{
   	padding-right: 0 !important;
   	overflow-y: scroll;
+}
+
+#testimonials {
+	margin-top: 10% !important;
+}
+
+.carousel-item {
+	height: 115vh;
+}
+
+.d-block {
+	height: 100%;
+	width: 80%;
+	padding: 0% 10% 10% 10%;
+	text-align: left;
+	display: flex !important;
+	align-items: center;
+}
+
+.carousel-caption {
+	float: right;
+	left: auto;
+}
+
+.teste {
+	cursor: pointer;
+}
+
+#teste-modal .modal-dialog {
+	max-height: 80%;
+	max-width: 32%;
 }
 
 /* Responsive behaviour */
@@ -610,6 +643,10 @@ button a {
 
 	#projects .card-row > div:nth-child(even) {
 		float: right;
+	}
+
+	.modal-dialog {
+		max-width: 100%;
 	}
 }
 

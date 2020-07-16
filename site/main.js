@@ -41,22 +41,10 @@ $(document).ready(() => {
 	});
 
 	//Card shell hover animation
-	$(".card-shell").on("mouseenter", function () {
+	$(".card-shell").on("mouseenter", async function () {
 		//Checks if the card is in proj-content
 		if ($(this).closest("#proj-content").length > 0) {	
-			//Dim background color
-			if ($(this).hasClass("card-highlight")) {
-				$(this).css("background-color", "#4d4702");
-			} else {
-				$(this).css("background-color", "#595959");
-			}
-			//Blur the card
-			$(this).addClass("card-blur");
-			//Checks that the user is not on mobile
-			if ($(window).width() > 1024) {
-				//Show the overlay text
-				$(this).find(".card-overlay").css("display", "flex");
-			}
+			focus(this);
 		}
 	});
 
@@ -85,7 +73,85 @@ $(document).ready(() => {
 		//Get the source of the image in the div that the user clicked on
 		let source = $(this).find("img").attr("src");
 		//Change the image source in the modal to the one the user clicked on
-		$(".modal-body").find("img").attr("src", source);
+		$(".cert-modal").find("img").attr("src", source);
 		$("#certificate-modal").modal();
 	});
+
+	//Checks if user is on mobile
+    let isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
+    if (isMobile) {
+        //User is on mobile
+        //Redirect user to project page when they click on the project instead of showing overlay
+        $(".card-shell").on("click", async function() {
+        	//Checks if the card is in proj-content
+			if ($(this).closest("#proj-content").length > 0) {
+				//Focuses the card
+				focus(this);
+				//Grabs the name of the project the user clicked on
+				let string = $(this).find("button").attr("onclick");
+				//Delays redirect by 0.2s, lets blur animation kick in first
+				setTimeout(function() {
+					//Gets rid of the front portion of the string
+					let url = string.replace("redirect('", "");
+					//Redirects user to the project page
+					redirect(url.replace("');", ""));
+				}, 200);
+			}
+        });
+    }
+
+    $(window).scroll((event) => {
+    	//Checks if the projects div is in the viewport
+    	if ($('#projcts').visible(true)) {
+    		//TODO: Make tooltip pop up tellng user to click on projects
+   	 	}
+   	});
+
+   	//Stops testimonial carousel from automatically cycling
+   	$("#teste-carousel").carousel({
+   		interval: false
+   	});
+
+   	//Open up testimonial modal when testimonials are clicked on
+   	$(".teste").on("click", function() {
+   		//Grab the testimonial ID of the one the user clicked on
+   		let id = $(this).attr("id");
+   		//Checks if the testimonial is testimonial number 4
+   		if (id == "teste-4") {
+   			console.log("yes");
+   			//Set the max-width of the modal dialog to 80%
+   			$("#teste-modal").find(".modal-dialog").css("max-width", "80%");
+   		} else {
+   			//Set the max-width of the modal dialog to 32%
+   			$("#teste-modal").find(".modal-dialog").css("max-width", "32%");
+   		}
+   		//Set the img url in the teste modal to the one the user clicked on
+   		let url = "./assets/showcase/" + id + ".jpg";
+   		$(".teste-modal").find("img").attr("src", url);
+   		//Opens the modal
+   		$("#teste-modal").modal();
+   	})
 });
+
+//Focuses the card
+function focus(card) {
+	//Dim background color
+	if ($(card).hasClass("card-highlight")) {
+		$(card).css("background-color", "#4d4702");
+	} else {
+		$(card).css("background-color", "#595959");
+	}
+	//Blur the card
+	$(card).addClass("card-blur");
+	//Checks that the user is not on mobile
+	if ($(window).width() > 1024) {
+		//Show the overlay text
+		$(card).find(".card-overlay").css("display", "flex");
+	}
+}
+
+//Redirect to project
+function redirect(project) {
+	let url = "./projects/" + project + "/index.html";
+	window.location.href = url;
+}

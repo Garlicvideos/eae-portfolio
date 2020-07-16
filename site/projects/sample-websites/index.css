@@ -1,0 +1,184 @@
+
+a {
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	margin: 0;
+	background-image: linear-gradient(to bottom right, #0092ff, #00b7ff);
+}
+
+nav {
+	height: 11%;
+}
+
+#nav-bg {
+	z-index: -10;
+	background-image: linear-gradient(to bottom right, #0092ff, #00aaed);
+}
+
+.nav-bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	/* Animation cycle transitions */
+	-webkit-transition: opacity 0.15s ease-in-out;
+  	-moz-transition: opacity 0.15s ease-in-out;
+  	-o-transition: opacity 0.15s ease-in-out;
+  	transition: opacity 0.15s ease-in-out;
+}
+
+.show-bg {
+	opacity: 1 !important;
+}
+
+nav > div {
+	height: 100%;
+}
+
+#heading {
+	float: left;
+	display: table;
+	margin-left: 4%;
+	font-size: 2em;
+}
+
+#heading > div {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#navNav {
+	padding-left: 15vw;
+}
+
+#navigation {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+
+#navigation a {
+	text-decoration: none;
+	color: white;
+	/* Hover animation */
+	-webkit-transition: all 0.05s ease-in-out;
+  	-moz-transition: all 0.05s ease-in-out;
+  	-o-transition: all 0.05s ease-in-out;
+  	transition: all 0.05s ease-in-out;
+}
+
+#navigation a:hover {
+	cursor: pointer;
+	font-weight: 1000;
+}
+
+.nav-button {
+	flex: 1;
+}
+
+#showcase-container {
+	margin: auto;
+	color: white;
+}
+
+.modal-dialog {
+	max-width: 60%;
+}
+
+.modal-body {
+	padding: 0;
+}
+
+.modal-body > img {
+	width: 100%;
+	border-radius: 0.3rem;
+}
+
+.modal-open{
+  	padding-right: 0 !important;
+}
+
+#showcase-carousel {
+	width: 35%;
+	margin: auto;
+	margin-top: 2%;
+	text-align: center;
+}
+
+#carousel-inner {
+	padding: 15% !important;
+}
+
+.d-block {
+	cursor: pointer;
+}
+
+#showcase-about {
+	width: 58%;
+	margin: auto;
+	margin-top: 2%;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+#github {
+	margin: 2% auto auto auto;
+	text-align: center;
+}
+
+.btn {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	cursor: pointer;
+    vertical-align: middle;
+}
+
+.btn:focus, .btn:active {
+	box-shadow: none;
+}
+
+.btn a {
+	color: white;
+	text-decoration: none !important;
+}
+
+.github-btn-img {
+	margin-left: 3%;
+}
+
+/* Responsive behaviour */
+
+@media only screen and (max-width: 768px) {
+	.modal-dialog {
+		max-width: 100%;
+	}
+
+	#showcase-carousel {
+		width: 95%;
+		margin-top: 10%;
+	}
+
+	#showcase-about {
+		width: 85%;
+		margin-top: 10%;
+	}
+
+	#wip {
+		margin-top: 5%;
+	}
+
+	#github {
+		margin: 10% auto 10% auto;
+	}
+
+	.btn {
+		padding-top: 2.5%;
+		padding-bottom: 2.5%;
+	}
+}
+

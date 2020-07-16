@@ -57,7 +57,7 @@
 				</div>
 			</div>
 			<div id="main-content" class="text-white">
-				<div id="technologies" style="background: url('./assets/background/div_background3.png') no-repeat; background-size: 100%;">
+				<div id="technologies">
 					<div id="tech-head">
 						<a>I have learned and familiarised myself with many Languages, Libraries and Services</a>
 					</div>
@@ -334,9 +334,9 @@
 							<a>Let me tell you about my story</a>
 						</div>
 						<div id="timeline-summary">
-							<a>Ever since I was young, I have been fascinated by the world of technology. I started by making point-to-click games on Powerpoint back in 2012, and I am now working on having Software Development as my career in the near future.</a>
+							<a>Ever since I was young, I have been fascinated by the world of technology. I started by making point-to-click games on Powerpoint back in 2012, and I am now working on having Software Development as my career in the future.</a>
 						</div>
-						<div id="timeline-body"><img src="./assets/background/flowchart2.png"></div>
+						<div id="timeline-body"><img src="./assets/background/flowchart2.jpg"></div>
 					</div>
 				</div>
 				<div id="showcase">
@@ -387,10 +387,10 @@
 					<div id="projects">
 						<a>My Projects</a>
 						<div id="proj-content">
-							<div id="rgjreigre" class="card-row">
-								<div id="u got me" class="card-shell card-flex card-highlight">
+							<div class="card-row">
+								<div class="card-shell card-flex card-highlight">
 									<div class="card-overlay">
-										<a>Kashoot! is Kahoot! with features the original lacks.<button type="button" class="btn btn-outline-light chev-anim">Read more <i class="gg-chevron-right"></i></button></a>
+										<a>Kashoot! is Kahoot! with features the original lacks.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('kashoot');">Read more <i class="gg-chevron-right"></i></button></a>
 									</div>
 									<div class="card-content">
 										<div class="card-content-image">
@@ -403,7 +403,7 @@
 								</div>
 								<div class="card-shell card-flex card-highlight">
 									<div class="card-overlay">
-										<a>Reddit's Nightmare scrapes Reddit for posts and uploads them to Instagram.<button type="button" class="btn btn-outline-light chev-anim">Read more <i class="gg-chevron-right"></i></button></a>
+										<a>Reddit's Nightmare scrapes Reddit for posts and uploads them to Instagram.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('reddits-nightmare');">Read more <i class="gg-chevron-right"></i></button></a>
 									</div>
 									<div class="card-content">
 										<div class="card-content-image">
@@ -416,7 +416,7 @@
 								</div>
 								<div class="card-shell card-flex card-highlight">
 									<div class="card-overlay">
-										<a>Tuxcoin Gamble allows the utilisation of Cryptocurrency for entertainment.<button type="button" class="btn btn-outline-light chev-anim">Read more <i class="gg-chevron-right"></i></button></a>
+										<a>Tuxcoin Gamble allows the utilisation of Cryptocurrency for entertainment.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('tuxcoin-gamble');">Read more <i class="gg-chevron-right"></i></button></a>
 									</div>
 									<div class="card-content">
 										<div class="card-content-image">
@@ -429,7 +429,7 @@
 								</div>
 								<div class="card-shell card-flex card-highlight">
 									<div class="card-overlay">
-										<a>Discord Radio Bot relays radio feed from Radio Stations to Voice channels on Discord.<button type="button" class="btn btn-outline-light chev-anim">Read more <i class="gg-chevron-right"></i></button></a>
+										<a>Discord Radio Bot relays radio feed from Radio Stations to Voice channels on Discord.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('radio-bot');">Read more <i class="gg-chevron-right"></i></button></a>
 									</div>
 									<div class="card-content">
 										<div class="card-content-image">
@@ -444,11 +444,24 @@
 							<div class="card-row">
 								<div class="card-shell card-flex">
 									<div class="card-overlay">
-										<a>This is a collection of websites that I made to improve my web design.<button type="button" class="btn btn-outline-light chev-anim">Read more <i class="gg-chevron-right"></i></button></a>
+										<a>LegoJB is a bot that aids in the operation of CSGO servers.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('legojb');">Read more <i class="gg-chevron-right"></i></button></a>
+									</div>
+									<div class="card-content">
+										<div class="card-content-image card-img-large rounded-img">
+											<image src="./assets/showcase/legojb.png"></image>
+										</div>
+										<div class="card-content-desc">
+											<a>LegoJB Discord Bot</a>
+										</div>
+									</div>
+								</div>
+								<div class="card-shell card-flex">
+									<div class="card-overlay">
+										<a>This is a collection of websites that I made to improve my web design.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('sample-websites');">Read more <i class="gg-chevron-right"></i></button></a>
 									</div>
 									<div class="card-content">
 										<div class="card-content-image card-img-large">
-											<image src="./assets/showcase/examplesites.png"></image>
+											<image src="./assets/showcase/examplesites.jpg"></image>
 										</div>
 										<div class="card-content-desc">
 											<a>Sample Websites</a>
@@ -457,7 +470,7 @@
 								</div>
 								<div class="card-shell card-flex">
 									<div class="card-overlay">
-										<a>I reprogrammed a blockchain visualiser to work with the Tuxcoin network instead of Ethereum's.<button type="button" class="btn btn-outline-light chev-anim">Read more <i class="gg-chevron-right"></i></button></a>
+										<a>I reprogrammed a blockchain visualiser to work with the Tuxcoin network instead of Ethereum's.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('tuxcoin-machine');">Read more <i class="gg-chevron-right"></i></button></a>
 									</div>
 									<div class="card-content">
 										<div class="card-content-image card-img-large">
@@ -470,7 +483,7 @@
 								</div>
 								<div class="card-shell card-flex">
 									<div class="card-overlay">
-										<a>Kahoot Mixer allows users to play Kahoot! without seeing the host's screen.<button type="button" class="btn btn-outline-light chev-anim">Read more <i class="gg-chevron-right"></i></button></a>
+										<a>Kahoot Mixer allows users to play Kahoot! without seeing the host's screen.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('kahoot-mixer');">Read more <i class="gg-chevron-right"></i></button></a>
 									</div>
 									<div class="card-content">
 										<div class="card-content-image card-img-large">
@@ -481,32 +494,19 @@
 										</div>
 									</div>
 								</div>
-								<div class="card-shell card-flex">
-									<div class="card-overlay">
-										<a>LegoJB is a bot that aids in the operation of CSGO servers.<button type="button" class="btn btn-outline-light chev-anim">Read more <i class="gg-chevron-right"></i></button></a>
-									</div>
-									<div class="card-content">
-										<div class="card-content-image card-img-large rounded-img">
-											<image src="./assets/showcase/legojb.png"></image>
-										</div>
-										<div class="card-content-desc">
-											<a>LegoJB Discord Bot</a>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
 					<div id="certificates">
 						<!-- Modal -->
 						<div class="modal fade" id="certificate-modal" tabindex="-1" role="dialog" aria-labelledby="certificate-label" aria-hidden="true">
-						  <div class="modal-dialog" role="document">
-						    <div class="modal-content">
-						      <div class="modal-body">
-						      	<img src="./assets/showcase/ycep.png">
-						      </div>
-						    </div>
-						  </div>
+						  	<div class="modal-dialog" role="document">
+						    	<div class="modal-content">
+						      		<div class="modal-body cert-modal">
+						      			<img src="./assets/showcase/ycep.png">
+						      		</div>
+						    	</div>
+						  	</div>
 						</div>
 						<div id="cert-header">
 							<a>My Certificates & Academics</a>
@@ -514,12 +514,12 @@
 						<div class="cert-row">
 							<div class="cert-shell">
 								<div class="cert-item">
-									<img src="./assets/showcase/most_improved_2015.png">
+									<img src="./assets/showcase/ycep.png">
 								</div>
 							</div>
 							<div class="cert-shell">
 								<div class="cert-item">
-									<img src="./assets/showcase/ycep.png">
+									<img src="./assets/showcase/most_improved_2015.jpg">
 								</div>
 							</div>
 							<div class="cert-shell">
@@ -527,6 +527,53 @@
 									<img src="./assets/showcase/syf_2016.png">
 								</div>
 							</div>
+						</div>
+						<div class="cert-row" style="margin-top: 5%;">
+							<div class="cert-shell">
+								<div class="cert-item">
+									<img src="./assets/showcase/gpa.jpg">
+								</div>
+							</div>
+							<div class="cert-shell">
+								<div class="cert-item">
+									<img src="./assets/showcase/syf_2014.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="testimonials">
+						<!-- Modal -->
+						<div class="modal fade" id="teste-modal" tabindex="-1" role="dialog" aria-labelledby="teste-label" aria-hidden="true">
+						  	<div class="modal-dialog" role="document">
+						    	<div class="modal-content">
+						      		<div class="modal-body teste-modal">
+						      			<img src="./assets/showcase/teste-1.jpg">
+						      		</div>
+						    	</div>
+						  	</div>
+						</div>
+						<div id="teste-header">
+							<a>Testimonials</a>
+						</div>
+						<div id="teste-body">
+							<div id="teste-carousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+						    	<li data-target="#teste-carousel" data-slide-to="0" class="active"></li>
+						    	<li data-target="#teste-carousel" data-slide-to="1"></li>
+						    	<li data-target="#teste-carousel" data-slide-to="2"></li>
+						    	<li data-target="#teste-carousel" data-slide-to="3"></li>
+						  	</ol>
+						  	<div class="carousel-inner">
+						  	</div>
+						  	<a class="carousel-control-prev" href="#teste-carousel" role="button" data-slide="prev">
+						    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    	<span class="sr-only">Previous</span>
+						  	</a>
+						  	<a class="carousel-control-next" href="#teste-carousel" role="button" data-slide="next">
+						    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    	<span class="sr-only">Next</span>
+						  	</a>
+						</div>
 						</div>
 					</div>
 				</div>

@@ -20,7 +20,7 @@
 			<div id="nav-bg" class="nav-bg"></div>
 			<div id="heading">
 				<div>
-					<a href="#introduction" class="navbar-brand"><b>Xavier's Portfolio</b></a>
+					<a href="../../index.html" class="navbar-brand"><b>Xavier's Portfolio</b></a>
 				</div>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navNav" aria-controls="navNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,18 +29,28 @@
 			<div class="collapse navbar-collapse" id="navNav">
 				<div class="navbar-nav ml-auto" id="navigation">
 					<div class="nav-item active nav-button">
-						<a href="#introduction">Introduction</a>
+						<a href="../../index.html#introduction">Introduction</a>
 					</div>
 					<div class="nav-item nav-button">
-						<a href="#nav-background-anchor">Background</a>
+						<a href="../../index.html#nav-background-anchor">Background</a>
 					</div>
 					<div class="nav-item nav-button">
-						<a href="#showcase">Showcase</a>
+						<a href="../../index.html#showcase">Showcase</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 		<div id="showcase-container">
+			<!-- Modal -->
+			<div class="modal fade" id="carousel-modal" tabindex="-1" role="dialog" aria-labelledby="carousel-label" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-body">
+			      	<img src="./assets/carousel/kashoot.png">
+			      </div>
+			    </div>
+			  </div>
+			</div>
 			<div id="showcase-carousel" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 			    	<li data-target="#showcase-carousel" data-slide-to="0" class="active"></li>
@@ -76,11 +86,11 @@
 			  	</a>
 			</div>
 			<div id="showcase-about">
-				<a>Kashoot! is a complete rewrite of Kahoot! without the downsides. Kashoot! retains all of Kahoot!'s current features, as well as prevent bots from joining game lobbies, as well as remove the maximum player cap. <b>It is currently a work-in-progress.</b></a>
+				<a>Kashoot! is a complete rewrite of Kahoot! without the downsides. It retains all of Kahoot!'s current features, as well as prevent bots from joining game lobbies. There is also no max player cap, unlike the original game. <br><span id="wip"><b>This project is currently a work-in-progress.</b></span></a>
 			</div>
 			<div id="github">
 				<div id="view-work-btn" class="btn btn-outline-light">
-					<a href="https://github.com/Garlicvideos/reddits-nightmare">View this project on github <img class="github-btn-img" width="8%" src="./assets/icons/github.png"></a>
+					<a href="https://github.com/Garlicvideos/kashoot">View this project on github <img class="github-btn-img" width="8%" src="./assets/icons/github.png"></a>
 				</div>
 			</div>
 			<div id="showcase-desc">
@@ -136,7 +146,7 @@
 											<a>Express.JS</a>
 										</div>
 										<div class="tech-item-desc">
-											<a>Express.JS was used to assist in managing client connections to the webserver</a>
+											<a>Express.JS was used to assist in managing client connections to the webserver.</a>
 										</div>
 									</div>
 								</div>
@@ -153,7 +163,7 @@
 											<a>Socket.io</a>
 										</div>
 										<div class="tech-item-desc">
-											<a>Socket.io was used to manage socket connections to the server. Information such as lobby details, connection status and authentication, are sent through Socket.io</a>
+											<a>Socket.io was used to manage socket connections to the server. Information such as lobby details, connection status and authentication, are sent through Socket.io.</a>
 										</div>
 									</div>
 								</div>
@@ -193,7 +203,7 @@
 								<div>
 									<div>
 										<div class="tech-item-head">
-											<a>No hard max player capacity</a>
+											<a id="max_cap">No hard max player capacity</a>
 										</div>
 										<div class="tech-item-desc">
 											<a>The 1,000 player limit is removed. You can now host games as large as your computer can handle. School-wide kahoot events are now possible.</a>
