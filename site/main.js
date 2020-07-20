@@ -1,6 +1,10 @@
 //Anchor tag scroll smooth animation
 $(document).on('click', 'a[href^="#"]', function (event) {
-	console.log("clic!!!!");
+	//Checks if the anchor tag is from testimonial carousel
+	if ($(this).attr("href") == "#teste-carousel") {
+		//Do not animate
+		return;
+	}
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 1000);
@@ -68,44 +72,36 @@ $(document).ready(() => {
 		}
 	});
 
+	//Change color of github icon and text in button to black on hover
+	$(".github").on("mouseenter", function() {
+		$(this).find("img").attr("src", "./assets/icons/github_black.png");
+		$(this).find("a").css("color", "black");
+	});
+
+	//Change color of github icon and text in button to white on unhover
+	$(".github").on("mouseleave", function() {
+		$(this).find("img").attr("src", "./assets/icons/github_white.png");
+		$(this).find("a").css("color", "white");
+	});
+
 	//Enlarge certificate when clicked on
 	$(".cert-shell").on("click", function ()  {
 		//Get the source of the image in the div that the user clicked on
 		let source = $(this).find("img").attr("src");
+		//Check if the image is horizontal or vertical
+		if ($(this).find("img").hasClass("vertical-cert")) {
+			//The certificate is vertical, remove max-width from modal-dialog
+			$("#certificate-modal").find(".modal-dialog").css("max-width", "500px");
+		} else {
+			//The certificate is horizontal, add max-width to modal-dialog
+			$("#certificate-modal").find(".modal-dialog").css("max-width", "60%");
+		}
+		//Format the image source so that the high res versions get loaded instead
+		source = highres(source);
 		//Change the image source in the modal to the one the user clicked on
 		$(".cert-modal").find("img").attr("src", source);
 		$("#certificate-modal").modal();
 	});
-
-	//Checks if user is on mobile
-    let isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
-    if (isMobile) {
-        //User is on mobile
-        //Redirect user to project page when they click on the project instead of showing overlay
-        $(".card-shell").on("click", async function() {
-        	//Checks if the card is in proj-content
-			if ($(this).closest("#proj-content").length > 0) {
-				//Focuses the card
-				focus(this);
-				//Grabs the name of the project the user clicked on
-				let string = $(this).find("button").attr("onclick");
-				//Delays redirect by 0.2s, lets blur animation kick in first
-				setTimeout(function() {
-					//Gets rid of the front portion of the string
-					let url = string.replace("redirect('", "");
-					//Redirects user to the project page
-					redirect(url.replace("');", ""));
-				}, 200);
-			}
-        });
-    }
-
-    $(window).scroll((event) => {
-    	//Checks if the projects div is in the viewport
-    	if ($('#projcts').visible(true)) {
-    		//TODO: Make tooltip pop up tellng user to click on projects
-   	 	}
-   	});
 
    	//Stops testimonial carousel from automatically cycling
    	$("#teste-carousel").carousel({
@@ -118,33 +114,54 @@ $(document).ready(() => {
    		let id = $(this).attr("id");
    		//Checks if the testimonial is testimonial number 4
    		if (id == "teste-4") {
-   			console.log("yes");
    			//Set the max-width of the modal dialog to 80%
-   			$("#teste-modal").find(".modal-dialog").css("max-width", "80%");
+   			$("#teste-modal").find(".modal-dialog").css("max-width", "90%");
    		} else {
    			//Set the max-width of the modal dialog to 32%
-   			$("#teste-modal").find(".modal-dialog").css("max-width", "32%");
+   			$("#teste-modal").find(".modal-dialog").css("max-width", "500px");
    		}
    		//Set the img url in the teste modal to the one the user clicked on
    		let url = "./assets/showcase/" + id + ".jpg";
+   		//Get the higher resolution image
+   		url = highres(url);
    		$(".teste-modal").find("img").attr("src", url);
    		//Opens the modal
    		$("#teste-modal").modal();
-   	})
+   	});
+
+   	//Disable email tooltip first
+   	$("#email").tooltip('disable');
+
+   	//Copy email address to clipboard when user clicks on it
+	$("#email").on("click", function() {
+		//Add email to clipboard
+		copyStringToClipboard("xavierteo26@gmail.com");
+		//Enable tooltip for the email element
+		$("#email").tooltip("enable");
+		//Invoke the "Copied!" animation
+		$("#email").tooltip("show");
+		//Wait 0.5s
+		setTimeout(function() {
+			//Hide the tooltip
+			$("#email").tooltip("hide");
+			//Disable tooltip for the email element
+			$("#email").tooltip("disable");
+		}, 500);
+	});
 });
 
 //Focuses the card
 function focus(card) {
-	//Dim background color
-	if ($(card).hasClass("card-highlight")) {
-		$(card).css("background-color", "#4d4702");
-	} else {
-		$(card).css("background-color", "#595959");
-	}
-	//Blur the card
-	$(card).addClass("card-blur");
 	//Checks that the user is not on mobile
 	if ($(window).width() > 1024) {
+		//Dim background color
+		if ($(card).hasClass("card-highlight")) {
+			$(card).css("background-color", "#4d4702");
+		} else {
+			$(card).css("background-color", "#595959");
+		}
+		//Blur the card
+		$(card).addClass("card-blur");
 		//Show the overlay text
 		$(card).find(".card-overlay").css("display", "flex");
 	}
@@ -152,6 +169,49 @@ function focus(card) {
 
 //Redirect to project
 function redirect(project) {
-	let url = "./projects/" + project + "/index.html";
+	let url = "./projects/" + project;
 	window.location.href = url;
 }
+
+//Format the image source so that the high res versions get loaded instead
+function highres(source) {
+	source = source.split(/(.png)|(.jpg)/);
+	console.log(source);
+	for (var i = 0; i < source.length; i++) {
+		if (source[i] == undefined) {
+			source[i] = "";
+		}
+	}
+	source = source[0] + "-highres" + source[1] + source[2] + source[3];
+	return source;
+}
+
+//Copy string to clipboard
+function copyStringToClipboard (str) {
+   // Create new element
+   var el = document.createElement('textarea');
+   // Set value (string to be copied)
+   el.value = str;
+   // Set non-editable to avoid focus and move outside of view
+   el.setAttribute('readonly', '');
+   el.style = {position: 'absolute', left: '-9999px'};
+   document.body.appendChild(el);
+   // Select text inside element
+   el.select();
+   // Copy text to clipboard
+   document.execCommand('copy');
+   // Remove temporary element
+   document.body.removeChild(el);
+}
+
+//Initialise tooltips
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+//Google analytics
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-173014077-1');

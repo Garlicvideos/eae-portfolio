@@ -108,12 +108,14 @@ nav > div {
 }
 
 #intro-text {
+	height: 100%;
 	width: 41%;
 	font-size: 1.1em;
 	text-align: left;
 	float: right;
 	padding-top: 15%;
 	padding-right: 2%;
+	position: relative;
 }
 
 #intro-text-head {
@@ -126,7 +128,7 @@ nav > div {
 
 .show > #navigation, .collapsing > #navigation {
 	height: auto;
-	background: url("./assets/background/wavy_background.png") no-repeat fixed;
+	background-image: linear-gradient(to bottom right, #0092ff, #0063ed);
 	background-size: cover;
 	padding-bottom: 20%;
 	border-width: 1px;
@@ -138,20 +140,25 @@ nav > div {
 	min-width: 16vw;
 }
 
-.btn {
+#advisory {
+	margin: auto;
+	font-size: 0.8em;
+	margin-top: 20%;
+}
+
+.btn-1 {
 	border-radius: 0px;
-	min-width: 30%;
 	padding-top: 1%;
 	padding-bottom: 1%;
 	margin-top: 4%;
 }
 
-.btn:hover {
+.btn-1:hover {
 	background: none;
 	color: white !important;
 }
 
-.btn:focus, .btn:active {
+.btn-1:focus, .btn-1:active {
 	box-shadow: none;
 }
 
@@ -175,9 +182,6 @@ button a {
 	width: 100%;
 	margin: auto;
 	text-align: center;
-}
-
-#main-content > div {
 	background-image: linear-gradient(to bottom right, #0092ff, #0063ed);
 }
 
@@ -190,7 +194,6 @@ button a {
 	padding-top: 15vh;
 	font-size: 1.9em;
 	width: 95%;
-	font-weight: 800;
 	margin: 0 auto 15vh auto;
 }
 
@@ -236,7 +239,6 @@ button a {
 
 .card-content-image {
 	height: 60%;
-	align-items: center;
 	display: flex;
 	align-items: center;
 }
@@ -263,11 +265,32 @@ button a {
 }
 
 #tech-footer {
-	width: 65%;
-	height: 12%;
-	margin: 10% auto 0 auto;
-	border-radius: 8px 8px 0 0;
-	background-color: white;
+	height: 15vh;
+	width: 100%;
+	margin: 25vh auto 0 auto;
+	position: relative;
+}
+
+.custom-shape-divider-bottom-1595233894 {
+	height: 100%;
+	width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1595233894 svg {
+	height: 100%;
+	width: calc(300% + 1.3px);
+    position: relative;
+    display: block;
+}
+
+.custom-shape-divider-bottom-1595233894 .shape-fill {
+    fill: #FFFFFF;
 }
 
 #timeline {
@@ -276,7 +299,8 @@ button a {
 
 #timeline-container {
 	color: black;
-	background: url("./assets/background/div_bg.png") no-repeat;
+	padding-top: 10vh;
+	background-color: white;
 	background-size: 100%;
 }
 
@@ -302,18 +326,36 @@ button a {
 	width: 100%;
 }
 
-#showcase {
-	padding-top: 10%;
-	padding-bottom: 20%;
+#showcase-top-divider {
+	height: 15vh;
+	width: 100%;
+	margin-top: 0% !important;
+	position: relative;
+}
+
+.custom-shape-divider-bottom-1595234342 {
+	height: 100%;
+	width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1595234342 svg {
+	height: 100%;
+	width: calc(122% + 1.3px);
+    position: relative;
+    display: block;
+}
+
+.custom-shape-divider-bottom-1595234342 .shape-fill {
+    fill: #FFFFFF;
 }
 
 #showcase > div {
-	width: 81%;
 	margin: auto;
-}
-
-#events {
-	margin-top: 5% !important;
 }
 
 #events > a {
@@ -324,28 +366,32 @@ button a {
 	height: 40vh;
 	width: 80%;
 	margin: auto;
-	margin-top: 10%;
 }
 
 #tourney > div {
 	min-height: 100%;
 }
 
-#projects {
-	margin-top: 10% !important;
-}
-
 #projects > a {
 	font-size: 1.8em;
 }
 
+#projects .card-shell .card-content .btn {
+	font-size: 2.2vw;
+	margin-top: 7%;
+	margin-bottom: 7%;
+	border-color: black;
+	color: black;
+	display: none;
+}
+
 #proj-content {
-	width: 81%;
+	width: 65%;
 	margin: auto;
 }
 
 #proj-content .card-content-image {
-	height: 75%;
+	height: 18vh;
 }
 
 .card-img-large > img {
@@ -405,7 +451,6 @@ button a {
 .card-overlay button {
 	font-size: 1vw;
 	margin-top: 2vh;
-	height: 10%;
 	width: 80%;
 }
 
@@ -413,18 +458,55 @@ button a {
 	margin-left: 5%;
 }
 
+#projects .card-shell .card-content .btn {
+	display: none;
+}
+
 #showcase .card-row {
-	height: 26%;
+	height: 28vh;
+}
+
+#showcase > div {
+	margin-top: 25vh;
+}
+
+.github-button {
+	margin: 7% auto auto auto;
+	text-align: center;
+}
+
+.github-button .btn {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	cursor: pointer;
+    vertical-align: middle;
+}
+
+.github-button .btn:focus, .btn:active {
+	box-shadow: none;
+}
+
+.github-button .btn a {
+	color: white;
+	font-size: 1.2em;
+	text-decoration: none !important;
+}
+
+.github-btn-img {
+	margin-left: 3%;
 }
 
 #certificates {
 	width: 85%;
-	margin-top: 10% !important;
 }
 
 #cert-header, #teste-header {
 	padding-bottom: 4%;
 	font-size: 1.8em;
+}
+
+#cert-header > a:nth-child(n+2) {
+	font-size: 0.5em;
 }
 
 .cert-row {
@@ -458,7 +540,11 @@ button a {
 	max-width: 50%;
 }
 
-#certificate-modal .modal-body {
+#certificates > hr {
+	background-color: white;
+}
+
+.modal-body {
 	padding: 0;
 }
 
@@ -472,21 +558,31 @@ button a {
   	overflow-y: scroll;
 }
 
+#teste-body {
+	padding-bottom: 15vh;
+}
+
 #testimonials {
-	margin-top: 10% !important;
+	margin-top: 25vh;
+}
+
+.carousel-indicators > li {
+	height: 10px;
+	width: 10px;
+  	border-radius: 50%;
 }
 
 .carousel-item {
-	height: 115vh;
+	height: auto;
 }
 
 .d-block {
-	height: 100%;
 	width: 80%;
 	padding: 0% 10% 10% 10%;
 	text-align: left;
 	display: flex !important;
 	align-items: center;
+	font-size: 0.8em;
 }
 
 .carousel-caption {
@@ -498,9 +594,137 @@ button a {
 	cursor: pointer;
 }
 
+.teste-text {
+	display: inline-block;
+}
+
+.teste-img {
+	display: none;
+}
+
 #teste-modal .modal-dialog {
 	max-height: 80%;
 	max-width: 32%;
+}
+
+#teste-footer {
+	height: 10vh;
+	position: relative;
+}
+
+.custom-shape-divider-bottom-1595149638 {
+	height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1595149638 svg {
+    position: relative;
+    display: block;
+    width: calc(141% + 1.3px);
+    height: 100%;
+}
+
+.custom-shape-divider-bottom-1595149638 .shape-fill {
+    fill: #273036;
+}
+
+#footer {
+	height: auto;
+	background-color: #273036;
+}
+
+#footer-content {
+	padding: 10vh 5vw 10vh 5vw;
+	display: flex;
+}
+
+#footer-content > div {
+	flex: 1;
+}
+
+#footer-content a {
+	color: white;
+	text-decoration: none;
+}
+
+#contacts {
+	width: 22vw;
+	float: left;
+}
+
+#contacts-header {
+	text-align: center;
+}
+
+.contact-item {
+	margin: auto;
+	margin-top: 2%;
+	padding-left: 3vw;
+}
+
+.contact-item a:hover {
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.contact-img {
+	max-width: 5%;
+	margin-right: 2%;
+}
+
+#footer-content hr {
+	background-color: white;
+	width: 80%;
+	margin-top: 3%;
+	margin-bottom: 1%;
+}
+
+#footer .github-button {
+	margin-top: 0%;
+	margin-bottom: 0%;
+	display: flex;
+  	justify-content: center;
+  	align-items: center; 
+}
+
+#footer .github {
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+#footer-nav {
+	color: white;
+	width: 22vw;
+	float: right;
+	text-align: center;
+}
+
+#footer-nav-body {
+	width: 95%;
+	margin: auto;
+}
+
+.nav-column {
+	width: 48%;
+}
+
+.foot-nav-item {
+	margin-top: 4%;
+	text-align: left;
+	font-size: 0.8vw;
+}
+
+.foot-nav-item > a:hover {
+	cursor: pointer;
+}
+
+.nav-item:hover {
+	cursor: pointer;
 }
 
 /* Responsive behaviour */
@@ -516,10 +740,12 @@ button a {
 	}
 
 	#intro-background {
-		background: url("./assets/background/intro-div-mobile.png") no-repeat;
+		background-image: linear-gradient(to bottom right, #0092ff, #00bbff);
 	}
 
 	#introduction {
+		height: 85vh;
+		margin-top: 25%;
 		display: flex;
 		justify-content: center;
 		align-content: center;
@@ -535,9 +761,10 @@ button a {
 
 	#main-content {
 		padding-top: 0;
+		background-image: linear-gradient(to bottom right, #0092ff, #00bbff);
 	}
 
-	.btn {
+	#view-work .btn {
 		width: 80%;
 		padding-top: 1%;
 		padding-bottom: 1%;
@@ -546,7 +773,8 @@ button a {
 
 	#tech-head {
 		padding-top: 15vh;
-		font-size: 1.2em;
+		margin-bottom: 8vh;
+		font-size: 1.3em;
 	}
 
 	#tech-body {
@@ -575,6 +803,10 @@ button a {
     	align-items: center;
 	}
 
+	#showcase-top-divider {
+		height: 5vh;
+	}
+
 	#showcase .card-row > div {
 		height: 60vw;
 		width: 60vw;
@@ -584,8 +816,8 @@ button a {
 	}
 
 	#projects .card-row > div {
-		height: 30vw;
-		width: 30vw;
+		height: 50vw;
+		width: 38vw;
 	}
 
 	#tech-body .card-row > div:nth-child(5) {
@@ -614,15 +846,23 @@ button a {
 	}
 
 	.card-content-desc {
-		font-size: 2.2vw;
+		font-size: 2.8vw;
 	}
 
-	#timeline-container {
-		background: none;
+	#tech-footer {
+		height: 10vh;
 	}
 
 	#tech-footer, #timeline-head, #timeline-summary {
 		width: 100%;
+	}
+
+	#timeline-summary {
+		font-size: 2.8vw;
+	}
+
+	#projects .card-content-desc {
+		font-size: 2.2vw;
 	}
 
 	#tourney {
@@ -631,6 +871,10 @@ button a {
 
 	#showcase .card-row > div:nth-child(n+1) {
 		margin-top: 10%;
+	}
+
+	#events > a, #projects > a, #cert-header, #teste-header {
+		font-size: 1.5em;
 	}
 
 	#proj-content {
@@ -645,9 +889,73 @@ button a {
 		float: right;
 	}
 
-	.modal-dialog {
-		max-width: 100%;
+	#projects .card-shell .card-content .btn {
+		display: inline-block;
 	}
+
+	.card-highlight > div > div {
+		color: black;
+		font-weight: 400;
+	}
+
+	.github-button {
+		padding-top: 12%;
+	}
+
+	#certificates .cert-row {
+		display: block;
+		width: auto !important;
+	}
+
+	#certificates .cert-shell {
+		margin-right: 0%;
+	}
+
+	#certificates .cert-row > div:nth-child(n+1) {
+		margin-top: 8%;
+	}
+
+	.modal-dialog {
+		max-width: 100% !important;
+		padding: 5% 5% 0% 5%;
+		margin: auto;
+	}
+
+	#testimonials {
+		margin-top: 15%;
+	}
+
+	.carousel-indicators > li {
+		height: 5px;
+		width: 5px;
+	  	border-radius: 50%;
+	}
+
+	.d-block {
+		font-size: 2vw;
+	}
+
+	.teste-text {
+		display: none;
+	}
+
+	.teste-img {
+		width: 100%;
+		display: inline-block;
+	}
+
+	#contacts {
+		width: 100%;
+	}
+
+	.contact-item {
+		padding-left: 20vw;
+	}
+
+	#footer .github-button, #misc {
+		display: none;
+	}
+
 }
 
 @media only screen and (min-width: 1024px) {

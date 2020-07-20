@@ -1,583 +1,719 @@
 <html>
-	<head>
-		<title>Xavier Teo's Portfolio</title>
-		<meta charset="UTF-8">
-		<meta name="description" content="Hi there! I am Xavier Teo, an aspiring Software Developer.">
-		<meta name="keywords" content="Xavier, Teo, Xavier Teo, Portfolio, Student, Bedok View Secondary School, Secondary 4">
-		<meta name="author" content="Xavier Teo">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="index.css">
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		<script src="./main.js"></script>
-		<link href='https://css.gg/arrow-right.css' rel='stylesheet'>
-	</head>
-	<body>
-		<div id="intro-background"></div>
-		<nav class="navbar navbar-expand-lg navbar-dark sticky-top text-white">
-			<div id="nav-bg" class="nav-bg"></div>
-			<div id="nav-bg2" class="nav-bg"></div>
-			<div id="heading">
-				<div>
-					<a href="#introduction" class="navbar-brand"><b>Xavier's Portfolio</b></a>
-				</div>
-			</div>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navNav" aria-controls="navNav" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navNav">
-				<div class="navbar-nav ml-auto" id="navigation">
-					<div class="nav-item active nav-button">
-						<a href="#introduction">Introduction</a>
+
+<head>
+    <title>Xavier Teo's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hi there! I am Xavier Teo, an aspiring Software Developer.">
+    <meta name="keywords" content="Xavier, Teo, Xavier Teo, Portfolio, Student, Bedok View Secondary School, Secondary 4">
+    <meta name="author" content="Xavier Teo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css?15615198">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173014077-1"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./main.js?687644"></script>
+    <link href='https://css.gg/arrow-right.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="intro-background"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top text-white">
+        <div id="nav-bg" class="nav-bg"></div>
+        <div id="nav-bg2" class="nav-bg"></div>
+        <div id="heading">
+            <div>
+                <a href="#introduction" class="navbar-brand"><b>Xavier's Portfolio</b></a>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navNav" aria-controls="navNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navNav">
+            <div class="navbar-nav ml-auto" id="navigation">
+                <div class="nav-item active nav-button">
+                    <a href="#introduction">Introduction</a>
+                </div>
+                <div class="nav-item nav-button">
+                    <a href="#nav-background-anchor">Background</a>
+                </div>
+                <div class="nav-item nav-button">
+                    <a href="#showcase">Showcase</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="wrapper">
+        <div id="introduction" class="text-white">
+            <div id="intro-text">
+                <div id="intro-text-head">
+                    <a>Hi there, I am <span style="color: #68ff4a;">Xavier</span>.</a>
+                </div>
+                <div id="intro-text-mission">
+                    <a>I aim to create software that benefits others.</a>
+                </div>
+                <div id="view-work">
+                    <button id="view-work-btn" type="button" class="btn btn-1 btn-outline-light chev-anim"><a href="#projects-scroll-anchor">View my work <i class="gg-chevron-right"></i></a></button>
+                </div>
+                <div id="advisory">
+                    <a>Site is best viewed on Desktop/Mobile Chrome</a>
+                </div>
+            </div>
+        </div>
+        <div id="main-content" class="text-white">
+            <div id="technologies">
+                <div id="tech-head">
+                    <a>I have learned and familiarised myself with many Languages, Libraries and Services</a>
+                </div>
+                <div id="tech-body">
+                    <div class="card-row">
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/nodejs.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>Node.js</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/php.svg"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>PHP</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/mysql.svg"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>MySQL</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/bootstrap.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>Bootstrap</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/github.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/npm.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>NPM</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/jenkins.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>Jenkins</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/sqlite.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>SQLite</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/jquery.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>JQuery</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/ubuntu.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>Ubuntu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/javascript.svg"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>Javascript</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/apache.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>Apache Server</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/phpmyadmin.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>PHPMyAdmin</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/digitalocean.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>Digitalocean</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/mongodb.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>MongoDB</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/sourcepawn.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>Sourcepawn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/html.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>HTML 5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/css.svg"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>CSS 3</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/webpack.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>Webpack</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/cryptocurrency.png"></image>
+                                </div>
+                                <div class="card-content-desc small-lh">
+                                    <a>Cryptocurrency</a>
+                                    <hr>
+                                    <a>Blockchains</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/socketio.svg"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>Socket.io</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/expressjs.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>Express.js</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/discordjs.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>Discord.js</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/recaptcha.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>Recaptcha V2/3</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-flex card-shell">
+                            <div class="card-content">
+                                <div class="card-content-image">
+                                    <image src="./assets/icons/restapi.png"></image>
+                                </div>
+                                <div class="card-content-desc">
+                                    <a>RESTful APIs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="nav-background-anchor"></div>
+                </div>
+                <div id="tech-footer">
+                	<div class="custom-shape-divider-bottom-1595233894">
+					    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+					        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+					    </svg>
 					</div>
-					<div class="nav-item nav-button">
-						<a href="#nav-background-anchor">Background</a>
-					</div>
-					<div class="nav-item nav-button">
-						<a href="#showcase">Showcase</a>
-					</div>
-				</div>
-			</div>
-		</nav>
-		<div id="wrapper">
-			<div id="introduction" class="text-white">
-				<div id="intro-text">
-					<div id="intro-text-head">
-						<a>Hi there, I am <span style="color: #68ff4a;">Xavier</span>.</a>
-					</div>
-					<div id="intro-text-mission">
-						<a>I aim to create software that benefits others.</a>
-					</div>
-					<div id="view-work">
-						<button id="view-work-btn" type="button" class="btn btn-outline-light chev-anim"><a href="#projects-scroll-anchor">View my work <i class="gg-chevron-right"></i></a></button>
-					</div>
-				</div>
-			</div>
-			<div id="main-content" class="text-white">
-				<div id="technologies">
-					<div id="tech-head">
-						<a>I have learned and familiarised myself with many Languages, Libraries and Services</a>
-					</div>
-					<div id="tech-body">
-						<div class="card-row">
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/nodejs.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>Node.js</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/php.svg"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>PHP</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/mysql.svg"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>MySQL</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/bootstrap.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>Bootstrap</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/github.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>Github</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="card-row">
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/npm.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>NPM</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/jenkins.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>Jenkins</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/sqlite.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>SQLite</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/jquery.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>JQuery</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/ubuntu.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>Ubuntu</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="card-row">
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/javascript.svg"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>Javascript</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/apache.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>Apache Server</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/phpmyadmin.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>PHPMyAdmin</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/digitalocean.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>Digitalocean</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/mongodb.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>MongoDB</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="card-row">
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/sourcepawn.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>Sourcepawn</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/html.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>HTML 5</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/css.svg"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>CSS 3</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/webpack.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>Webpack</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/cryptocurrency.png"></image>
-									</div>
-									<div class="card-content-desc small-lh">
-										<a>Cryptocurrency</a>
-										<hr>
-										<a>Blockchains</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="card-row">
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/socketio.svg"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>Socket.io</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/expressjs.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>Express.js</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/discordjs.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>Discord.js</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/recaptcha.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>Recaptcha V2/3</a>
-									</div>
-								</div>
-							</div>
-							<div class="card-flex card-shell">
-								<div class="card-content">
-									<div class="card-content-image">
-										<image src="./assets/icons/restapi.png"></image>
-									</div>
-									<div class="card-content-desc">
-										<a>RESTful APIs</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="nav-background-anchor"></div>
-					</div>
-					<div id="tech-footer"></div>
-				</div>
-				<div id="timeline">
-					<div id="timeline-container">
-						<div id="timeline-head">
-							<a>Let me tell you about my story</a>
-						</div>
-						<div id="timeline-summary">
-							<a>Ever since I was young, I have been fascinated by the world of technology. I started by making point-to-click games on Powerpoint back in 2012, and I am now working on having Software Development as my career in the future.</a>
-						</div>
-						<div id="timeline-body"><img src="./assets/background/flowchart2.jpg"></div>
-					</div>
-				</div>
-				<div id="showcase">
-					<div id="events">
-						<a>My Accomplishments</a>
-						<div id="tourney">
-							<div class="card-row">
-								<div class="card-shell card-flex">
-									<div class="card-content">
-										<div class="card-content-image">
-											<image src="./assets/icons/kahoot.png"></image>
-										</div>
-										<div class="card-content-desc small-lh">
-											<a>Hosted a community Kahoot</a>
-											<hr>
-											<a>With over 15,000 people</a>
-										</div>
-									</div>
-								</div>
-								<div class="card-shell card-flex">
-									<div class="card-content">
-										<div class="card-content-image">
-											<image src="./assets/icons/garlicoin_tourneys.png"></image>
-										</div>
-										<div class="card-content-desc small-lh">
-											<a>Hosted multiple tournaments</a>
-											<hr>
-											<a>With prize pools of over $60</a>
-										</div>
-									</div>
-								</div>
-								<div class="card-shell card-flex">
-									<div class="card-content">
-										<div class="card-content-image">
-											<image src="./assets/icons/csgo.png"></image>
-										</div>
-										<div class="card-content-desc small-lh">
-											<a>Operated many game servers</a>
-											<hr>
-											<a>400 unique players monthly</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div id="projects-scroll-anchor"></div>
-					<div id="projects">
-						<a>My Projects</a>
-						<div id="proj-content">
-							<div class="card-row">
-								<div class="card-shell card-flex card-highlight">
-									<div class="card-overlay">
-										<a>Kashoot! is Kahoot! with features the original lacks.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('kashoot');">Read more <i class="gg-chevron-right"></i></button></a>
-									</div>
-									<div class="card-content">
-										<div class="card-content-image">
-											<image src="./assets/showcase/kashoot.png"></image>
-										</div>
-										<div class="card-content-desc">
-											<a>Kashoot!</a>
-										</div>
-									</div>
-								</div>
-								<div class="card-shell card-flex card-highlight">
-									<div class="card-overlay">
-										<a>Reddit's Nightmare scrapes Reddit for posts and uploads them to Instagram.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('reddits-nightmare');">Read more <i class="gg-chevron-right"></i></button></a>
-									</div>
-									<div class="card-content">
-										<div class="card-content-image">
-											<image src="./assets/showcase/reddits-nightmare.png"></image>
-										</div>
-										<div class="card-content-desc">
-											<a>Reddit's Nightmare</a>
-										</div>
-									</div>
-								</div>
-								<div class="card-shell card-flex card-highlight">
-									<div class="card-overlay">
-										<a>Tuxcoin Gamble allows the utilisation of Cryptocurrency for entertainment.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('tuxcoin-gamble');">Read more <i class="gg-chevron-right"></i></button></a>
-									</div>
-									<div class="card-content">
-										<div class="card-content-image">
-											<image src="./assets/showcase/tuxgamble.png"></image>
-										</div>
-										<div class="card-content-desc">
-											<a>Tuxcoin Gamble</a>
-										</div>
-									</div>
-								</div>
-								<div class="card-shell card-flex card-highlight">
-									<div class="card-overlay">
-										<a>Discord Radio Bot relays radio feed from Radio Stations to Voice channels on Discord.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('radio-bot');">Read more <i class="gg-chevron-right"></i></button></a>
-									</div>
-									<div class="card-content">
-										<div class="card-content-image">
-											<image src="./assets/showcase/radiobot.png"></image>
-										</div>
-										<div class="card-content-desc">
-											<a>Discord Radio Bot</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="card-row">
-								<div class="card-shell card-flex">
-									<div class="card-overlay">
-										<a>LegoJB is a bot that aids in the operation of CSGO servers.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('legojb');">Read more <i class="gg-chevron-right"></i></button></a>
-									</div>
-									<div class="card-content">
-										<div class="card-content-image card-img-large rounded-img">
-											<image src="./assets/showcase/legojb.png"></image>
-										</div>
-										<div class="card-content-desc">
-											<a>LegoJB Discord Bot</a>
-										</div>
-									</div>
-								</div>
-								<div class="card-shell card-flex">
-									<div class="card-overlay">
-										<a>This is a collection of websites that I made to improve my web design.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('sample-websites');">Read more <i class="gg-chevron-right"></i></button></a>
-									</div>
-									<div class="card-content">
-										<div class="card-content-image card-img-large">
-											<image src="./assets/showcase/examplesites.jpg"></image>
-										</div>
-										<div class="card-content-desc">
-											<a>Sample Websites</a>
-										</div>
-									</div>
-								</div>
-								<div class="card-shell card-flex">
-									<div class="card-overlay">
-										<a>I reprogrammed a blockchain visualiser to work with the Tuxcoin network instead of Ethereum's.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('tuxcoin-machine');">Read more <i class="gg-chevron-right"></i></button></a>
-									</div>
-									<div class="card-content">
-										<div class="card-content-image card-img-large">
-											<image src="./assets/showcase/tuxcoin.png"></image>
-										</div>
-										<div class="card-content-desc">
-											<a>Tuxcoin Machine</a>
-										</div>
-									</div>
-								</div>
-								<div class="card-shell card-flex">
-									<div class="card-overlay">
-										<a>Kahoot Mixer allows users to play Kahoot! without seeing the host's screen.<button type="button" class="btn btn-outline-light chev-anim" onclick="redirect('kahoot-mixer');">Read more <i class="gg-chevron-right"></i></button></a>
-									</div>
-									<div class="card-content">
-										<div class="card-content-image card-img-large">
-											<image src="./assets/showcase/kahoot.png"></image>
-										</div>
-										<div class="card-content-desc">
-											<a>Kahoot Mixer</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div id="certificates">
-						<!-- Modal -->
-						<div class="modal fade" id="certificate-modal" tabindex="-1" role="dialog" aria-labelledby="certificate-label" aria-hidden="true">
-						  	<div class="modal-dialog" role="document">
-						    	<div class="modal-content">
-						      		<div class="modal-body cert-modal">
-						      			<img src="./assets/showcase/ycep.png">
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
-						<div id="cert-header">
-							<a>My Certificates & Academics</a>
-						</div>
-						<div class="cert-row">
-							<div class="cert-shell">
-								<div class="cert-item">
-									<img src="./assets/showcase/ycep.png">
-								</div>
-							</div>
-							<div class="cert-shell">
-								<div class="cert-item">
-									<img src="./assets/showcase/most_improved_2015.jpg">
-								</div>
-							</div>
-							<div class="cert-shell">
-								<div class="cert-item">
-									<img src="./assets/showcase/syf_2016.png">
-								</div>
-							</div>
-						</div>
-						<div class="cert-row" style="margin-top: 5%;">
-							<div class="cert-shell">
-								<div class="cert-item">
-									<img src="./assets/showcase/gpa.jpg">
-								</div>
-							</div>
-							<div class="cert-shell">
-								<div class="cert-item">
-									<img src="./assets/showcase/syf_2014.jpg">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div id="testimonials">
-						<!-- Modal -->
-						<div class="modal fade" id="teste-modal" tabindex="-1" role="dialog" aria-labelledby="teste-label" aria-hidden="true">
-						  	<div class="modal-dialog" role="document">
-						    	<div class="modal-content">
-						      		<div class="modal-body teste-modal">
-						      			<img src="./assets/showcase/teste-1.jpg">
-						      		</div>
-						    	</div>
-						  	</div>
-						</div>
-						<div id="teste-header">
-							<a>Testimonials</a>
-						</div>
-						<div id="teste-body">
-							<div id="teste-carousel" class="carousel slide" data-ride="carousel">
-							<ol class="carousel-indicators">
-						    	<li data-target="#teste-carousel" data-slide-to="0" class="active"></li>
-						    	<li data-target="#teste-carousel" data-slide-to="1"></li>
-						    	<li data-target="#teste-carousel" data-slide-to="2"></li>
-						    	<li data-target="#teste-carousel" data-slide-to="3"></li>
-						  	</ol>
-						  	<div class="carousel-inner">
-						  	</div>
-						  	<a class="carousel-control-prev" href="#teste-carousel" role="button" data-slide="prev">
-						    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						    	<span class="sr-only">Previous</span>
-						  	</a>
-						  	<a class="carousel-control-next" href="#teste-carousel" role="button" data-slide="next">
-						    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						    	<span class="sr-only">Next</span>
-						  	</a>
-						</div>
-						</div>
+                </div>
+                <div id="timeline">
+                    <div id="timeline-container">
+                        <div id="timeline-head">
+                            <a>My Journey</a>
+                        </div>
+                        <div id="timeline-summary">
+                            <a>Ever since I was young, I have been fascinated by the world of technology. I started by making point-to-click games on Powerpoint back in 2012, and I am now working on having Software Development as my career in the future.</a>
+                        </div>
+                        <div id="timeline-body"><img src="./assets/background/flowchart2.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="showcase">
+            	<div id="showcase-top-divider">
+	            	<div class="custom-shape-divider-bottom-1595234342">
+					    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+					        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+					    </svg>
 					</div>
 				</div>
-			</div>
-		</div>
-	</body>
+                <div id="events">
+                    <a>My Accomplishments</a>
+                    <div id="tourney">
+                        <div class="card-row">
+                            <div class="card-shell card-flex">
+                                <div class="card-content">
+                                    <div class="card-content-image">
+                                        <image src="./assets/icons/kahoot.png"></image>
+                                    </div>
+                                    <div class="card-content-desc small-lh">
+                                        <a>Hosted a community Kahoot</a>
+                                        <hr>
+                                        <a>With over 15,000 people</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-shell card-flex">
+                                <div class="card-content">
+                                    <div class="card-content-image">
+                                        <image src="./assets/icons/garlicoin_tourneys.png"></image>
+                                    </div>
+                                    <div class="card-content-desc small-lh">
+                                        <a>Hosted multiple tournaments</a>
+                                        <hr>
+                                        <a>With prize pools of over $60</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-shell card-flex">
+                                <div class="card-content">
+                                    <div class="card-content-image">
+                                        <image src="./assets/icons/csgo.png"></image>
+                                    </div>
+                                    <div class="card-content-desc small-lh">
+                                        <a>Operated many game servers</a>
+                                        <hr>
+                                        <a>400 unique players monthly</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="projects-scroll-anchor"></div>
+                <div id="projects">
+                    <a>My Projects</a>
+                    <div id="proj-content">
+                        <div class="card-row">
+                            <div class="card-shell card-flex card-highlight">
+                                <div class="card-overlay">
+                                    <a>Kashoot! is Kahoot! with features the original lacks.<button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('kashoot');">Read more <i class="gg-chevron-right"></i></button></a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-content-image">
+                                        <image src="./assets/showcase/kashoot.png"></image>
+                                    </div>
+                                    <div class="card-content-desc">
+                                        <a>Kashoot!</a>
+                                    </div>
+                                    <button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('kashoot');">Read more</button>
+                                </div>
+                            </div>
+                            <div class="card-shell card-flex card-highlight">
+                                <div class="card-overlay">
+                                    <a>Reddit's Nightmare scrapes Reddit for posts and uploads them to Instagram.<button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('reddits-nightmare');">Read more <i class="gg-chevron-right"></i></button></a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-content-image small-img">
+                                        <image src="./assets/showcase/reddits-nightmare.png"></image>
+                                    </div>
+                                    <div class="card-content-desc">
+                                        <a>Reddit's Nightmare</a>
+                                    </div>
+                                    <button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('reddits-nightmare');">Read more</button>
+                                </div>
+                            </div>
+                            <div class="card-shell card-flex card-highlight">
+                                <div class="card-overlay">
+                                    <a>Tuxcoin Gamble allows the utilisation of Cryptocurrency for entertainment.<button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('tuxcoin-gamble');">Read more <i class="gg-chevron-right"></i></button></a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-content-image">
+                                        <image src="./assets/showcase/tuxgamble.png"></image>
+                                    </div>
+                                    <div class="card-content-desc">
+                                        <a>Tuxcoin Gamble</a>
+                                    </div>
+                                    <button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('tuxcoin-gamble');">Read more</button>
+                                </div>
+                            </div>
+                            <div class="card-shell card-flex card-highlight">
+                                <div class="card-overlay">
+                                    <a>Discord Radio Bot relays radio feed from Radio Stations to Voice channels on Discord.<button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('radio-bot');">Read more <i class="gg-chevron-right"></i></button></a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-content-image">
+                                        <image src="./assets/showcase/radiobot.png"></image>
+                                    </div>
+                                    <div class="card-content-desc">
+                                        <a>Discord Radio Bot</a>
+                                    </div>
+                                    <button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('radio-bot');">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-row">
+                            <div class="card-shell card-flex">
+                                <div class="card-overlay">
+                                    <a>LegoJB is a bot that aids in the operation of CSGO servers.<button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('legojb');">Read more <i class="gg-chevron-right"></i></button></a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-content-image card-img-large rounded-img">
+                                        <image src="./assets/showcase/legojb.png"></image>
+                                    </div>
+                                    <div class="card-content-desc">
+                                        <a>LegoJB Discord Bot</a>
+                                    </div>
+                                    <button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('legojb');">Read more</button>
+                                </div>
+                            </div>
+                            <div class="card-shell card-flex">
+                                <div class="card-overlay">
+                                    <a>This is a collection of websites that I made to improve my web design.<button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('sample-websites');">Read more <i class="gg-chevron-right"></i></button></a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-content-image card-img-large">
+                                        <image src="./assets/showcase/examplesites.jpg"></image>
+                                    </div>
+                                    <div class="card-content-desc">
+                                        <a>Sample Websites</a>
+                                    </div>
+                                    <button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('sample-websites');">Read more</button>
+                                </div>
+                            </div>
+                            <div class="card-shell card-flex">
+                                <div class="card-overlay">
+                                    <a>A blockchain visualiser visualising the Tuxcoin network instead of Ethereum's.<button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('tuxcoin-machine');">Read more <i class="gg-chevron-right"></i></button></a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-content-image card-img-large">
+                                        <image src="./assets/showcase/tuxcoin.png"></image>
+                                    </div>
+                                    <div class="card-content-desc">
+                                        <a>Tuxcoin Machine</a>
+                                    </div>
+                                    <button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('tuxcoin-machine');">Read more</button>
+                                </div>
+                            </div>
+                            <div class="card-shell card-flex">
+                                <div class="card-overlay">
+                                    <a>Kahoot Mixer allows users to play Kahoot! without seeing the host's screen.<button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('kahoot-mixer');">Read more <i class="gg-chevron-right"></i></button></a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-content-image card-img-large">
+                                        <image src="./assets/showcase/kahoot.png"></image>
+                                    </div>
+                                    <div class="card-content-desc">
+                                        <a>Kahoot Mixer</a>
+                                    </div>
+                                    <button type="button" class="btn btn-1 btn-outline-light chev-anim" onclick="redirect('kahoot-mixer');">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="github-button">
+                            <div class="github btn btn-outline-light">
+                                <a href="https://github.com/Garlicvideos">Check out my Github <img class="github-btn-img" width="8%" src="./assets/icons/github_white.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="certificates">
+                    <!-- Modal -->
+                    <div class="modal fade" id="certificate-modal" tabindex="-1" role="dialog" aria-labelledby="certificate-label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body cert-modal">
+                                    <img loading="lazy" src="./assets/showcase/ycep.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cert-header">
+                        <a>My Certificates & Academics</a><br>
+                        <a>Click the images to view them in a higher resolution</a>
+                    </div>
+                    <div class="cert-row">
+                        <div class="cert-shell">
+                            <div class="cert-item">
+                                <img src="./assets/showcase/ycep.png">
+                            </div>
+                        </div>
+                        <div class="cert-shell">
+                            <div class="cert-item">
+                                <img src="./assets/showcase/most_improved_2015.jpg">
+                            </div>
+                        </div>
+                        <div class="cert-shell">
+                            <div class="cert-item">
+                                <img src="./assets/showcase/syf_2016.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-row" style="margin: 5% auto 5% auto; width: 50%;">
+                        <div class="cert-shell">
+                            <div class="cert-item">
+                                <img class="vertical-cert" src="./assets/showcase/gpa.jpg">
+                            </div>
+                        </div>
+                        <div class="cert-shell" style="margin-right: 0% !important;">
+                            <div class="cert-item">
+                                <img class="vertical-cert" src="./assets/showcase/syf_2014.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="cert-row" style="margin: 5% auto 5% auto; width: 70%;">
+                        <div class="cert-shell">
+                            <div class="cert-item">
+                                <img class="vertical-cert" src="./assets/showcase/cca1.jpg">
+                            </div>
+                        </div>
+                        <div class="cert-shell">
+                            <div class="cert-item">
+                                <img class="vertical-cert" src="./assets/showcase/cca2.jpg">
+                            </div>
+                        </div>
+                        <div class="cert-shell" style="margin-right: 0% !important;">
+                            <div class="cert-item">
+                                <img class="vertical-cert" src="./assets/showcase/2020wa1.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="cert-row" style="margin: 5% auto 5% auto; width: 50%;">
+                        <div class="cert-shell">
+                            <div class="cert-item">
+                                <img class="vertical-cert" src="./assets/showcase/sa2pg1.jpg">
+                            </div>
+                        </div>
+                        <div class="cert-shell">
+                            <div class="cert-item">
+                                <img class="vertical-cert" src="./assets/showcase/sa2pg2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="testimonials">
+                <!-- Modal -->
+                <div class="modal fade" id="teste-modal" tabindex="-1" role="dialog" aria-labelledby="teste-label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body teste-modal">
+                                <img loading="lazy" src="./assets/showcase/teste-1.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="teste-header">
+                    <a>Testimonials</a>
+                </div>
+                <div id="teste-body">
+                    <div id="teste-carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#teste-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#teste-carousel" data-slide-to="1"></li>
+                            <li data-target="#teste-carousel" data-slide-to="2"></li>
+                            <li data-target="#teste-carousel" data-slide-to="3"></li>
+                        </ol>
+                       
+                        <a class="carousel-control-prev" href="#teste-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#teste-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="teste-footer">
+	                <div class="custom-shape-divider-bottom-1595149638">
+					    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+					        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+					    </svg>
+					</div>
+				</div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-content">
+            	<div id="contacts-wrapper">
+            		<div id="contacts">
+	            		<div id="contacts-header">
+	            			<a>Contacts</a>
+	            		</div>
+	            		<hr>
+	            		<div class="contact-item">
+	            			<a href="https://github.com/Garlicvideos"><img class="contact-img" alt="Github:" src="./assets/icons/github_white.png"><span>Garlicvideos</span></a>
+	            		</div>
+	            		<div class="contact-item">
+	            			<a id="email" data-toggle="tooltip" data-placement="right" title="Copied!"><img class="contact-img" alt="Email:" src="./assets/icons/email.svg"><span>xavierteo26@gmail.com</span></a>
+	            		</div>
+	            		<div class="contact-item">
+	            			<a href="https://instagram.com/wow.garlic"><img class="contact-img" alt="Instagram:" src="./assets/icons/instagram.svg"><span>wow.garlic</span></a>
+	            		</div>
+	            	</div>
+            	</div>
+            	<div class="github-button">
+                    <div class="github btn btn-outline-light">
+                        <a href="https://github.com/Garlicvideos/eae-portfolio">View this website on Github <img class="github-btn-img" width="8%" src="./assets/icons/github_white.png"></a>
+                    </div>
+                </div>
+                <div id="misc">
+                	<div id="footer-nav">
+                		<div id="nav-head">
+                			<a>Navigate</a>
+                		</div>
+                		<hr>
+                		<div id="footer-nav-body">
+	                		<div class="nav-column" style="float: left;">
+		            			<div class="foot-nav-item chev-anim">
+		            				<a onclick="redirect('reddits-nightmare');">Reddit's Nightmare  <i class="gg-chevron-right"></i></a>
+		            			</div>
+		            			<div class="foot-nav-item chev-anim">
+		            				<a onclick="redirect('tuxcoin-gamble');">Tuxcoin Gamble  <i class="gg-chevron-right"></i></a>
+		            			</div>
+		            			<div class="foot-nav-item chev-anim">
+		            				<a onclick="redirect('radio-bot');">Discord Radio Bot  <i class="gg-chevron-right"></i></a>
+		            			</div>
+		            			<div class="foot-nav-item chev-anim">
+		            				<a onclick="redirect('kashoot');">Kashoot  <i class="gg-chevron-right"></i></a>
+		            			</div>
+		            		</div>
+		            		<div class="nav-column" style="float: right;">
+		            			<div class="foot-nav-item chev-anim">
+		            				<a onclick="redirect('legojb');">LegoJB Discord Bot  <i class="gg-chevron-right"></i></a>
+		            			</div>
+		            			<div class="foot-nav-item chev-anim">
+		            				<a onclick="redirect('sample-websites');">Sample Websites  <i class="gg-chevron-right"></i></a>
+		            			</div>
+		            			<div class="foot-nav-item chev-anim">
+		            				<a onclick="redirect('tuxcoin-machine');">Tuxcoin Machine  <i class="gg-chevron-right"></i></a>
+		            			</div>
+		            			<div class="foot-nav-item chev-anim">
+		            				<a onclick="redirect('kahoot-mixer');">Kahoot Mixer  <i class="gg-chevron-right"></i></a>
+		            			</div>
+		            		</div>
+		            	</div>
+                	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
